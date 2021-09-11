@@ -20,17 +20,6 @@
 
 \begin{enumerate}
 
-    % \renewcommand{\arraystretch}{1.5} % default is 1.0
-    % \begin{table}[h]\centering
-    %     \begin{tabular}{c|ccccc}
-        
-    %         $X$   & -2            & -1            & 0             & 1              & 3               \\ \hline
-    %     $p_k$ & $\displaystyle{\frac{1}{5}}$ & $\displaystyle{\frac{1}{6}}$ & $\displaystyle{\frac{1}{5}}$ & $\displaystyle{\frac{1}{15}}$ & $\displaystyle{\frac{11}{30}}$ 
-    %     \end{tabular}
-    %     \end{table}
-    %     \vspace{-0.5cm}
-
-    
     \item 考虑为期一年的一张保险单，若投保人在投保后一年内因意外死亡，则公司赔付20万
     元，若投保人因其他原因死亡，则公司赔付5万元．若投保人在投保期末生存，则公司无需付
     给任何费用．若投保人在一年内因意外死亡的概率为0.0002，因其他原因死亡的概率为
@@ -71,7 +60,7 @@
         \item 以$X$表示鸟为了飞出房间试飞的次数，求$X$的分布律．
         \item 户主声称他养的一只鸟是有记忆的，它飞向任一窗子的尝试不多于一次。以$Y$表示
         这只聪明的鸟为了飞出房间试飞的次数．如户主所说是确实的，试求$Y$的分布律．
-        \item 求试飞次数$X$小于$Y$的概率和试飞次数$Y$小于$X$的概率·
+        \item 求试飞次数$X$小于$Y$的概率和试飞次数$Y$小于$X$的概率.
     \end{enumerate}
 
 
@@ -243,8 +232,128 @@
     l500小时的概率是多少？
 
 
-    \item 
+    \item 设顾客在某银行的窗口等待服务的时间$X$（min）服从指数分布，其概率密度为
+    $$f_X(x)=\left\{
+        \begin{array}{ll}
+            \dfrac{1}{5}e^{-x/5}, & x>0\\
+            0, & \mbox{其他}
+        \end{array}
+    \right.$$
+    某顾客在窗口等待服务。若超过10min，他就离开。他一个月要到银行5次．以$Y$表示一个月
+    内他未等到服务而离开窗口的次数．写出$Y$的分布律．并求$P\{Y\geq 1\}$.
 
+
+    \item 设$K$在(0,5)服从均匀分布，求$x$的方程
+    $$4x^2+4Kx+K+2=0$$
+    有实根的概率。
+
+
+    \item 设$X\sim N(3,2^2)$
+    \begin{enumerate}
+        \item 求$P\{2<X\leq 5\},P\{-4<X\leq 10\},P\{|X|>2\},P\{X>3\}$.
+        \item 确定$c$，使得$P\{X>c\}=P\{X\leq c\}$.
+        \item 设$d$满足$P\{X>d\}\geq 0.9$，问$d$至少为多少？
+    \end{enumerate}
+
+
+    \item 某地区18岁的女青年的血压（收缩压,以mmHg计）服从$N(110,12^2)$分布．在该地
+    区任选一18岁的女青年，测量她的血压$X$。求
+    \begin{enumerate}
+        \item $P\{X\leq 105\},P\{100<X\leq 120\}$；
+        \item 确定最小的$x$，使$P\{X>x\}\leq 0.05$。
+    \end{enumerate}
+
+
+    \item 由某机器生产的螺栓的长度（cm）的服从参数$\mu=10.05,\sigma=0.06$的正态分布．规定长度
+    在范围$10.05\pm 0.12$内为合格品，求一螺栓为不合格品的概率．
+
+
+    \item 一工厂生产的某种元件的寿命$X$（以小时计）服从参数为$\mu=160,\sigma(\sigma >0)$的正态分
+    布。若要求$P\{120<X\leq 200\}\geq 0.80$，允许$\sigma$最大为多少？
+
+
+
+    \item 设在一电路中，电阻两端的电压（V）服从$N(120,2^2)$，今独立测量了5次，试确定有2
+    次测定值落在区间$[118,122]$之外的概率。
+
+
+    \item 某人上班，自家里去办公楼要经过一交通指示灯，这一指示灯有80\%时间亮红灯，此
+    时他在指示灯旁等待直至绿灯亮，等待时间在区间$[0,30]$（以秒计）服从均匀分布．以$X$表示
+    他的等待时间，求$X$的分布函数$F(x)$.画出$F(x)$的图形，并问$X$是否为连续型随机变量，是
+    否为离散型的？（要说明理由）
+
+
+    \item 设$f(x),g(x)$都是概率密度函数，求证
+    $$h(x)=af(x)+(1-\alpha)g(x),\quad 0\leq \alpha \leq 1$$
+    也是一个概率密度函数．
+
+
+    \item 设随机变量$X$的分布律为   
+    \renewcommand{\arraystretch}{1.5}
+    \begin{table}[H]\centering
+        \begin{tabular}{c|ccccc}
+        
+            $X$   & -2            & -1            & 0             & 1              & 3               \\ \hline
+        $p_k$ & $\displaystyle{\frac{1}{5}}$ & $\displaystyle{\frac{1}{6}}$ & $\displaystyle{\frac{1}{5}}$ & $\displaystyle{\frac{1}{15}}$ & $\displaystyle{\frac{11}{30}}$ 
+        \end{tabular}
+    \end{table}
+ 
+
+    求$Y=X^2$的分布律。
+
+
+    \item 设随机变量$X$在区间(0,1)服从均匀分布．
+    \begin{enumerate}
+        \item 求$Y=e^X$的概率密度；
+        \item 求$Y=-2\ln X$的概率密度。
+    \end{enumerate}
+
+
+    \item 设$X\sim N(0,1)$.
+    \begin{enumerate}
+        \item 求$Y=e^X$的概率密度.
+        \item 求$Y=2X^2+1$的概率密度.
+        \item 求$Y=|X|$的概率密度.
+    \end{enumerate}
+
+    
+    \item \begin{enumerate}
+        \item 设随机变量$X$的概率密度为$f(x),-\infty < x<\infty$．求$Y=X^3$的概率密度
+        \item 设随机变量$X$的概率密度为
+        $$f(x)=\left\{\begin{array}{ll}
+            e^{-x}, & x>0\\
+            0, & \mbox{其他}
+        \end{array}\right.$$
+        求$Y=X^2$的概率密度。
+    \end{enumerate}
+
+
+    \item 设随机变量$X$的概率密度为
+    $$f(X)=\left\{\begin{array}{ll}
+        \dfrac{2x}{\pi ^2}, & 0<x <\pi\\
+        0, & \mbox{其他}
+    \end{array}\right.$$
+    求$Y=\sin X$的概率密度。
+
+
+    \item 设电流$I$是一个随机变量，它均匀分布在9A$\sim$11A之间．若此电流通过$2\Omega$的电
+    阻，在其上消耗的功率$W=2I^2$。求$W$的概率密度。
+
+
+    \item 某物体的温度$T$($^{\circ}$F)是随机变量，且有$T\sim N(98.6,2)$，已知$\varTheta =\dfrac{5}{9}(T-32)$，试求
+    $\varTheta$($^{\circ}$C)的概率密度．
+
+
+
+
+
+
+    
+
+
+
+    
+    
 
 
     
