@@ -1,0 +1,186 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[UTF8]{ctex}
+\usepackage{fontspec}
+\usepackage{geometry} 
+\usepackage{amsmath}
+\usepackage[shortlabels]{enumitem}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{epstopdf}
+\usepackage{amsmath,amssymb}
+\usepackage{diagbox}
+\DeclareSymbolFont{EulerExtension}{U}{euex}{m}{n}
+\DeclareMathSymbol{\euintop}{\mathop} {EulerExtension}{"52}
+\DeclareMathSymbol{\euointop}{\mathop} {EulerExtension}{"48}
+\let\intop\euintop
+\let\ointop\euointop
+
+\geometry{left=3.17cm,right=3.17cm,top=2.53cm,bottom=2.54cm}
+%\setmainfont{Times New Roman}
+\pagestyle{plain}
+\setlist[enumerate,1]{label=\textbf{\arabic*.}}
+\setlist[enumerate,2]{label=(\arabic*)}
+
+\begin{document}
+
+\begin{enumerate}
+
+
+
+
+    \item 在一箱子中装有12只开关．其中2只是次品，在其中取两次．每次任取一只，考虑两
+    种试验：（1）放回抽样；（2）不放回抽样．我们定义随机变量$X,Y$如下：
+    $$X=\left\{\begin{array}{ll}
+        0, & \mbox{若第一次取出的是正品}\\
+        1, & \mbox{若第一次取出的是次品}
+    \end{array}\right.\\
+    Y=\left\{\begin{array}{ll}
+        0, & \mbox{若第二次取出的是正品}\\
+        1, & \mbox{若第二次取出的是次品}\\
+    \end{array}\right.$$
+    试分别就（1）、（2）两种情况．写出$X$和$Y$的联合分布律．
+
+
+    \item \begin{enumerate}
+        \item 盒子里装有3只黑球、2只红球、2只白球，在其中任取4只球．以$X$表示取到黑
+        球的只数，以$Y$表示取到红球的只数．求$X$和$Y$的联合分布律．
+        \item 在（1）中求$P\{X>Y\},P\{Y=2X\},P\{X+Y=3\},P\{X<3-Y\}$.
+    \end{enumerate}
+
+
+    \item 设随机变量$X,Y$的概率密度为
+    $$f(x,y)=\left\{\begin{array}{ll}
+        k(6-x-y), & 0<x<2,2<y<4\\
+        0, & \mbox{其他}
+    \end{array}\right.$$
+    \begin{enumerate}
+        \item 确定常数$k$.
+        \item 求$P\{X<1,Y<3\}$.
+        \item 求$P\{X<1.5\}$.
+        \item 求$P\{X+Y\leq 4\}$.
+    \end{enumerate}
+
+
+    \item 设$X,Y$都是非负的连续型随机变量，它们相互独立．
+    \begin{enumerate}
+        \item 证明$$P\{X<Y\}=\int _0^\infty F_X(x)f_Y(x)\mathrm{d}x$$
+        其中$F_X(x)$是$X$的分布函数，$f_Y(y)$是$Y$的概率密度．
+        \item 设$X,Y$相互独立．其概率密度分别为
+        $$f_X(x)=\left\{\begin{array}{ll}
+            \lambda_1 e^{-\lambda_1 x}, & x>0,\\
+            0, & \mbox{其他},
+        \end{array}\right.\\
+        f_Y(y)=\left\{\begin{array}{ll}
+            \lambda_2 e^{-\lambda_2 y}, & y>0,\\
+            0, & \mbox{其他},
+        \end{array}\right.$$
+        求$P\{X<Y\}$.
+    \end{enumerate}
+
+
+    \item 设随机变量$(X,Y)$具有分布函数
+    $$F(x,y)=\left\{\begin{array}{ll}
+        1-e^{-x}-e^{-y}+e^{-x-y}, & x>0,y>0\\
+        0, & \mbox{其他}
+    \end{array}\right.$$
+    求边缘分布函数.
+
+
+    \item 将一枚硬币掷3次以$X$表示前2次中出现$H$的次数，以$Y$表示3次中出现$H$的次
+    数．求$X,Y$的联合分布律以及$(X,Y)$的边缘分布律．
+
+
+    \item 设二维随机变量$(X,Y)$的概率密度为
+    $$f(x,y)=\left\{\begin{array}{ll}
+        4.8y(2-x), & 0\leq x \leq 1,0\leq y \leq x,\\
+        0, & \mbox{其他},
+    \end{array}\right.$$
+    求边缘概率密度.
+
+
+    \item 设二维随机变量$(X,Y)$的概率密度为
+    $$f(x,y)=\left\{\begin{array}{ll}
+        e^{-y}, & 0<x<y,\\
+        0, & \mbox{其他},
+    \end{array}\right.$$
+    求边缘概率密度.
+
+
+    \item 设二维随机变量$(X,Y)$的概率密度为
+    $$f(x,y)=\left\{\begin{array}{ll}
+        cx^2y, & x^2\leq y \leq 1,\\
+        0, & \mbox{其他},
+    \end{array}\right.$$
+    \begin{enumerate}
+        \item 确定常数$c$；
+        \item 求边缘概率密度.
+    \end{enumerate}
+
+
+    \item 将某一医药公司8月份和9月份收到的青霉素针剂的订货单数分别记为$X$和$Y$，据以往
+    积累的资料知$X$和$Y$的联合分布律为
+
+    \begin{table}[H]\centering
+        \begin{tabular}{c|ccccc}
+        \hline
+        \diagbox{$Y$}{$X$}   & 51   & 52   & 53   & 54   & 55   \\ \hline
+        51 & 0.06 & 0.05 & 0.05 & 0.01 & 0.01 \\
+        52 & 0.07 & 0.05 & 0.01 & 0.01 & 0.01 \\
+        53 & 0.05 & 0.10 & 0.10 & 0.05 & 0.05 \\
+        54 & 0.05 & 0.02 & 0.01 & 0.01 & 0.03 \\
+        55 & 0.05 & 0.06 & 0.05 & 0.01 & 0.03 \\ \hline
+        \end{tabular}
+    \end{table}
+    \begin{enumerate}
+        \item 求边缘分布律．
+        \item 求8月份的订单数为51时，9月份订单数的条件分布律．
+    \end{enumerate}
+    
+    
+    \item 以$X$记某医院一天出生的婴儿的个数，$Y$记其中男婴的个数．设$X$和$Y$的联合分布律为
+    \begin{equation}
+        \begin{aligned}
+        \nonumber
+        P\{X=n,Y=m\}=&\frac{e^{-14}(7.14)^m(6.86)^{n-m}}{m!(n-m)!},\\
+        &\qquad m=0,1,2,\cdots,n;\quad n=0,1,2,\cdots
+        \end{aligned}
+     \end{equation}
+     \begin{enumerate}
+         \item 求边缘分布律．
+         \item 求条仵分布律．
+         \item 特别，写出当$X=20$时，$Y$的条件分布律．
+     \end{enumerate}
+
+
+     \item 设随机变量$X$在1,2,3,4四个整数中等可能地取一个值，另一个随机变量
+     $Y$在$1\sim X$中等可能地取一整数值。求条件分布律$P\{Y=k|X=i\}$。
+
+
+
+
+
+ 
+
+   
+
+
+
+
+
+    
+    % \begin{table}[H]\centering
+    %     \begin{tabular}{c|cccccc}
+    %     \hline
+    %     \diagbox{$Y$}{$X$}  & 0    & 1    & 2    & 3    & 4    & 5    \\ \hline
+    %     0 & 0.00 & 0.01 & 0.03 & 0.05 & 0.07 & 0.09 \\
+    %     1 & 0.01 & 0.02 & 0.04 & 0.05 & 0.06 & 0.08 \\
+    %     2 & 0.01 & 0.03 & 0.05 & 0.05 & 0.05 & 0.06 \\
+    %     3 & 0.01 & 0.02 & 0.04 & 0.06 & 0.06 & 0.05 \\ \hline
+    %     \end{tabular}
+    % \end{table}
+
+  
+
+\end{enumerate}
+\end{document}
