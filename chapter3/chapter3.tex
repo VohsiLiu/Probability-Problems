@@ -149,7 +149,7 @@
      \begin{enumerate}
          \item 求边缘分布律．
          \item 求条仵分布律．
-         \item 特别，写出当$X=20$时，$Y$的条件分布律．
+         \item 特别地，写出当$X=20$时，$Y$的条件分布律．
      \end{enumerate}
 
 
@@ -157,29 +157,226 @@
      $Y$在$1\sim X$中等可能地取一整数值。求条件分布律$P\{Y=k|X=i\}$。
 
 
+     \item 在第9题中
+     \begin{enumerate}
+         \item 求条件概率密度$f_{X|Y}(x|y)$．特别地，写出当$Y=\dfrac{1}{2}$时$X$的条件概率密度．
+         \item 求条件概率密度$f_{Y|X}(y|x)$．特别地，写出当$X=\dfrac{1}{3},X=\dfrac{1}{2}$时$Y$的条件概率密度．
+         \item 求条件概率
+         $$P\left\{Y\geq \frac{1}{4}\left|X=\frac{1}{2}\right.\right\},\quad P\left\{Y\geq \frac{3}{4}\left|X=\frac{1}{2}\right.\right\}$$
+     \end{enumerate}
+
+
+     \item 设随机变量$(X,Y)$的概率密度为
+     $$f(x,y)=\left\{\begin{array}{ll}
+         1, & |y|<x,0<x<1\\
+         0, & \mbox{其他}
+     \end{array}\right.$$
+     求条件概率密度$f_{Y|X}=(y|x),f_{X|Y}(x|y)$.
+
+
+     \item 设随机变量$X\sim U(0,1)$，当给定$X=x$时，随机变量$Y$的条件概率密度为
+     $$f_{Y|X}(y|x)=\left\{\begin{array}{ll}
+         x, & 0<y<\dfrac{1}{x} \\
+         0, & \mbox{其他}
+     \end{array}\right.$$
+     \begin{enumerate}
+         \item 求$X$和$Y$的联合概率密度$f(x,y)$.
+         \item 求边缘密度$f_Y(y)$，并画出它的图形.
+         \item 求$P\{X>Y\}$.
+     \end{enumerate}
+
+
+     \item \begin{enumerate}
+         \item 问第1题中的随机变量$X$和$Y$是否相互独立？
+         \item 间第14题中的随机变量$X$和$Y$是否相互独立（需说明理由）？
+     \end{enumerate}
+
+
+     \item \begin{enumerate}
+         \item 设随机变量$(X,Y)$具有分布函数
+         $$F(x,y)=\left\{\begin{array}{ll}
+             (1-e^{-\alpha x})y, & x\geq 0,0\leq y \leq 1,\\
+             1-e^{-\alpha x}, & x\geq 0,y>1,\\
+             0, & \mbox{其他}
+         \end{array}\right.\quad \alpha>0$$
+         证明$X,Y$相互独立.
+         \item 设随机变量$(X,Y)$具有分布律
+         $$P\{X=x,Y=y\}=p^2(1-p)^{x+y-2},0<p<1,x,y\mbox{均为正整数}$$
+         问$X,Y$是否相互独立。
+     \end{enumerate}
 
 
 
- 
+     \item 设$X$和$Y$是两个相互独立的随机变量，$X$在区间$(0,1)$上服从均匀分布，$Y$的概率密度为
+     $$f_Y(y)=\left\{\begin{array}{ll}
+         \dfrac{1}{2} e^{-y/2}, & y>0\\
+         0, & y\leq 0
+     \end{array}\right.$$
+     \begin{enumerate}
+         \item 求$X$和$Y$的联合概率密度。
+         \item 设有$a$的二元一次方程为$a+2Xa+Y=0$，试求$a$有实根的概率。
+     \end{enumerate}
 
+
+
+     \item 进行打靶，设弹着点$A(X,Y)$的坐标$X$和$Y$相互独立，且都服从$N(0,1)$分布，规定
+    \begin{equation}
+        \begin{aligned}
+        \nonumber
+        &\text{点}A\mbox{落在区域}D_1=\{(x,y)|x^2+y^2\leq 1\}\mbox{得}2\mbox{分}\\
+        &\mbox{点}A\mbox{落在区域}D_2=\{1<(x,y)|x^2+y^2\leq 4\}\mbox{得}1\mbox{分}\\
+        &\mbox{点}A\mbox{落在区域}D_3=\{(x,y)|x^2+y^2>4\}\mbox{得}0\mbox{分}\\              
+        \end{aligned}
+    \end{equation}
+    以$Z$记打靶的得分．写出$X,Y$的联合概率密度，并求$Z$的分布律．
+
+
+    \item 设$X$和$Y$是相互独立的随机变量，其概率密度分别为
+    $$f_X(x)=\left\{\begin{array}{ll}
+        \lambda e^{-\lambda x}, & x>0,\\
+        0, & x\leq 0,
+    \end{array}\right.\quad
+    f_Y(y)=\left\{\begin{array}{ll}
+        \mu e^{-\mu y}, & y<0,\\
+        0, & y\leq 0
+    \end{array}\right.$$
+    其中$\lambda>0,\mu>0$是常数。引入随机变量
+    $$Z=\left\{\begin{array}{ll}
+        1, & \mbox{当}X\leq Y,\\
+        0, & \mbox{当}X>Y
+    \end{array}\right.$$
+    \begin{enumerate}
+        \item 求条件概率密度$f_{X|Y}(x|y)$．
+        \item 求$Z$的分布律和分布函数.
+    \end{enumerate}
+     
+
+
+    \item 设随机变量$(X,Y)$的概率密度为
+    $$f(x,y)=\left\{\begin{array}{ll}
+        x+y, & 0<x<1,0<y<1\\
+        0, & \mbox{其他}
+    \end{array}\right.$$
+    分别求（1）$Z=X+Y$，（2）$Z=XY$的概率密度
+
+
+    \item 设$X$和$Y$是两个相互独立的随机变量，其概率密度分别为
+    $$f_X(x)=\left\{\begin{array}{ll}
+        1, & 0\leq x\leq 1,\\
+        0, & \mbox{其他},
+    \end{array}\right.\quad
+    f_Y(y)=\left\{\begin{array}{ll}
+        e^{-y}, & y>0,\\
+        0, & \mbox{其他},
+    \end{array}\right.$$
+    求随机变量$Z=X+Y$的概率密度。
+
+     
+    \item 某种商品一周的需求量是一个随机变量．其概率密度为
+    $$f(t)=\left\{\begin{array}{ll}
+        te^{-t}, & t>0\\
+        0, & t\leq 0 
+    \end{array}\right.$$
+    设各周的需求量是相互独立的。求（1）两周，（2）三周的需求量的概率密度．
+
+
+    \item 设随机变量$(X,Y)$的概率密度为
+    $$f(x,y)=\left\{\begin{array}{ll}
+        \dfrac{1}{2}(x+y)e^{-(x+y)}, & x>0,y>0\\
+        0, & \mbox{其他}
+    \end{array}\right.$$
+    \begin{enumerate}
+        \item 问$X$和$Y$是否相互独立
+        \item 求$Z=X+Y$的概率密度
+    \end{enumerate}
+
+
+    \item 设随机变量$X,Y$相互独立，且具有相同的分布，它们的概率密度均为
+    $$f(x)=\left\{\begin{array}{ll}
+        e^{1-x}, & x>1\\
+        0, & \mbox{其他}
+    \end{array}\right.$$
+    求$Z=X+Y$的概率密度
+
+
+    \item 设随机变量$X,Y$相互独立，它们的概率密度均为
+    $$f(x)=\left\{\begin{array}{ll}
+        e^{-x}, & x>0\\
+        0, & \mbox{其他}
+    \end{array}\right.$$
+    求$Z=Y/X$的概率密度
+
+
+    \item 设随机变量$X,Y$相互独立，它们都在区间(0,1)上服从均匀分布，$A$是以$X,Y$为边
+    长的矩形的面积，求$A$的概率密度．
+
+
+    \item 设$X,Y$是相互独立的随机变量．它们都服从正态分布$N(0,\sigma^2)$.试验证随机变量$Z=\sqrt{X^2+Y^2}$
+    的概率密度为
+    $$f_Z(z)=\left\{\begin{array}{ll}
+        \dfrac{z}{\sigma^2}e^{-z^2/(2\sigma^2)}, & z\geq 0\\
+        0, & \mbox{其他}
+    \end{array}\right.$$
+    我们称$Z$服从参数为$\sigma(\sigma>0)$的瑞利分布．
+
+
+
+    \item 设随机变量$(X,Y)$的概率密度为
+    $$f(x,y)=\left\{\begin{array}{ll}
+        be^{-(x+y)}, & 0<x<1,0<y<\infty\\
+        0, & \mbox{其他}
+    \end{array}\right.$$
    
 
 
+    \item 设某种型号的电子元件的寿命（以小时计）近似地服从正态分布$N(160,20^2)$．随机
+    地选取4只，求其中没有一只寿命小于180的概率．
 
 
 
+    \item 对某种电子装置的输出测量了5次．得到结果为$X_1,X_2,X_3,X_4,X_5$.设它们是相互
+    独立的随机变量且都服从参数$\sigma=2$的瑞利分布．
+    \begin{enumerate}
+        \item 求$Z=\max \{X_1,X_2,X_3,X_4,X_5\}$的分布函数
+        \item 求$P\{Z>4\}$
+    \end{enumerate}
+
+
+    \item 设随机变量$X,Y$相互独立，且服从同一分布，试证明；
+    $$P\{a<\min \{X,Y\} \leq b\}={[P\{X>a\}]}^2-{[P\{X>b\}]}^2\quad (a\leq b)$$
+
+
+    \item 设$X,Y$是相互独立的随机变量．其分布律分别为
+    $$P\{X=k\}=p(k),\quad k=0,1,2,\cdots,$$
+    $$P\{Y=r\}=q(r),\quad r=0,1,2,\cdots.$$
+    证明随机变量$Z=X+Y$的分布律为
+    $$P\{Z=i\}=\sum _{k=0}^i p(k)q(i-k),\quad i=0,1,2,\cdots$$
+
+
+    \item 设$X,Y$是相互独立的随机变量，$X\sim \pi(\lambda_1),Y\sim \pi(\lambda_2)$.证明$Z=X+Y\sim \pi(\lambda_1+\lambda_2)$
     
-    % \begin{table}[H]\centering
-    %     \begin{tabular}{c|cccccc}
-    %     \hline
-    %     \diagbox{$Y$}{$X$}  & 0    & 1    & 2    & 3    & 4    & 5    \\ \hline
-    %     0 & 0.00 & 0.01 & 0.03 & 0.05 & 0.07 & 0.09 \\
-    %     1 & 0.01 & 0.02 & 0.04 & 0.05 & 0.06 & 0.08 \\
-    %     2 & 0.01 & 0.03 & 0.05 & 0.05 & 0.05 & 0.06 \\
-    %     3 & 0.01 & 0.02 & 0.04 & 0.06 & 0.06 & 0.05 \\ \hline
-    %     \end{tabular}
-    % \end{table}
+    
+    
+    \item 设$X,Y$是相互独立的随机变量，$X\sim b(n_1,p),Y\sim b(n_2,p)$.证明$Z=X+Y\sim b(n_1+n_2,p)$
+    
 
+    \item 设随机变量$(X,Y)$的分布律为  
+    \begin{table}[H]\centering
+        \begin{tabular}{c|cccccc}
+        \hline
+        \diagbox{$Y$}{$X$}  & 0    & 1    & 2    & 3    & 4    & 5    \\ \hline
+        0 & 0.00 & 0.01 & 0.03 & 0.05 & 0.07 & 0.09 \\
+        1 & 0.01 & 0.02 & 0.04 & 0.05 & 0.06 & 0.08 \\
+        2 & 0.01 & 0.03 & 0.05 & 0.05 & 0.05 & 0.06 \\
+        3 & 0.01 & 0.02 & 0.04 & 0.06 & 0.06 & 0.05 \\ \hline
+        \end{tabular}
+    \end{table}
+    \begin{enumerate}
+        \item 求$P\{X=2|Y=2\},P\{Y=3|X=0\}$
+        \item 求$V=\max \{X,Y\}$的分布律
+        \item 求$U=\min \{X,Y\}$的分布律
+        \item 求$W=X+Y$的分布律
+    \end{enumerate}
   
 
 \end{enumerate}
