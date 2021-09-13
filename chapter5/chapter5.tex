@@ -1,0 +1,151 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[UTF8]{ctex}
+\usepackage{fontspec}
+\usepackage{geometry} 
+\usepackage{amsmath}
+\usepackage[shortlabels]{enumitem}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{epstopdf}
+\usepackage{amsmath,amssymb}
+\usepackage{diagbox}
+\usepackage{setspace}
+\usepackage{enumitem}
+\DeclareSymbolFont{EulerExtension}{U}{euex}{m}{n}
+\DeclareMathSymbol{\euintop}{\mathop} {EulerExtension}{"52}
+\DeclareMathSymbol{\euointop}{\mathop} {EulerExtension}{"48}
+\let\intop\euintop
+\let\ointop\euointop
+
+\geometry{left=3.17cm,right=3.17cm,top=2.53cm,bottom=2.54cm}
+%\setmainfont{Times New Roman}
+\pagestyle{plain}
+\setlist[enumerate,1]{label=\textbf{\arabic*.}}
+\setlist[enumerate,2]{label=(\arabic*)}
+
+\begin{document}
+
+\begin{enumerate}
+
+    
+    % \vspace{-0.5cm}
+    % \begin{spacing}{2.0}
+    % $$f(x)\left\{\begin{array}[]{ll}
+        
+    %     \dfrac{1}{1500^2}x, & 0\leq x \leq 1500,\\
+    %     -\dfrac{1}{1500^2}(x-300), & 1500<x\leq 3000,\\
+    %     0, &  \mbox{其他}.
+    % \end{array}\right.$$
+    % \end{spacing}
+    % \vspace{-0.5cm}
+    
+
+
+
+    \item 据以往经验，某种电器元件的寿命服从均值为100$\, $h的指数分布．现随机地取16只，
+    设它们的寿命是相互独立的，求这16只元件的寿命的总和大于1920$\, $h的概率．
+        
+
+    \item \begin{enumerate}
+        \item 一保险公司有10000个汽车投保人，每个投保人索赔金额的数学期望为280美
+        元，标准差为800美元．求索赔总金额超过2700000美元的概率．
+        \item 一公司有50张签约保险单．各张保险单的索赔金额为$X_i,i=1,2,\cdots,50$（以千美元
+        计） 服从韦布尔分布，均值$E(X_i)=5$，方差$D(X_i)=6$，求50张保险单索赔的合计
+        金额大于300的概率（设各保险单索赔金额是相互独立的）.
+    \end{enumerate}
+
+
+    \item 计算器在进行加法时，将每个加数舍入最靠近它的整数，设所有舍入误差相互独立且
+    在$(-0.5,0.5)$上服从均匀分布
+    \begin{enumerate}
+        \item 将1500个数相加，问误差总和的绝对值超过15的概率是多少？
+        \item 最多可有几个数相加使得误差总和的绝对值小于10的概率不小于0.90？
+    \end{enumerate}
+
+
+
+    \item 设各零件的重量都是随机变量，它们相互独立，且服从相同的分布，其数学期望为
+    0.5$\, $kg，均方差为0.1$\, $kg，问5000只零件的总重量超过2510$\, $kg的概率是多少？
+
+
+
+    \item 有一批建筑房屋用的木柱，其中80\%的长度不小于3$\, $m，现从这批木柱中随机地取
+    100根，求其中至少有30根短于3$\, $m的概率．
+
+
+    \item 一工人修理一台机器需两个阶段，第一阶段所需时间（小时）服从均值为0.2的指数
+    分布，第二阶段服从均值为0.3的指数分布，且与第一阶段独立。现有20台机器需要修理，求
+    他在8h内完成的概率．
+
+
+    \item 一食品店有三种蛋糕出售，由于售出哪一种蛋糕是随机的．因而售出一只蛋糕的价格是
+    一个随机变量，它取1元、1.2元、1.5元各个值的概率分别为0.3、0.2、0.5. 若售出300只蛋糕．
+    \begin{enumerate}
+        \item 求收入至少400元的概率．
+        \item 求售出价格为1.2元的蛋糕多于60只的概率．
+    \end{enumerate}
+
+
+
+    \item 一复杂的系统由100个相互独立起作用的部件所组成，在整个运行期间每个部件损
+    坏的概率为0.10．为了使整个系统起作用，至少必须有85个部件正常工作，求整个系统起作
+    用的概率．
+
+
+    \item 已知在某十字路口，一周事故发生数的数学期望为2.2．标准差为1.4
+    \begin{enumerate}
+        \item 以$\overline{X}$表示一年（以52周计）此十字路口事故发生数的算术平均，试用中心极限定理
+        求$\overline{X}$的近似分布，并求$P\{\overline{X}<2\}$.
+        \item 求一年事故发生数小于100的概率．
+    \end{enumerate}
+
+
+    \item 某种小汽车氧化氮的排放量的数学期望为0.9$\, $g/km，标准差为1.9$\, $g/km.某汽车公
+    司有这种小汽车100辆．以$X$表示这些车辆氧化氮排放量的算术平均，问当$L$为何值时$\overline{X}>L$
+    的概率不超过0.01.
+
+
+
+    \item 随机地选取两组学生，每组80人，分别在两个实验室里测量某种化合物的pH值。各人
+    测量的结果是随机变量，它们相互独立，服从同一分布，数学期望为5，方差为0.3．以$\overline{X},\overline{Y}$分
+    别表示第一组和第二组所得结果的算术平均．
+    \begin{enumerate}
+        \item 求$P\{4.9<\overline{X}<5.1\}$.
+        \item 求$P\{-0.1<\overline{X}-\overline{Y}<0.1\}$
+    \end{enumerate}
+
+
+
+    \item 一公寓有200户住户．一户住户拥有汽车辆数$X$的分布律为
+    \begin{table}[H]\centering
+    \begin{tabular}{c|ccc}
+    $X$   & 0 & 1   & 2   \\ \hline
+    $p_k$ & 0.1  & 0.6 & 0.3
+    \end{tabular}
+    \end{table}
+    \vspace{-0.5cm}
+    问需要多少车位，才能使每辆汽车都具有一个车位的概率至少为0.95.
+
+
+    \item 某种电子器件的寿命（小时）具有数学期望$\mu$（未知），方差$\sigma^2=400$．为了估计$\mu$，随机
+    地取$n$只这种器件，在时刻$t=0$投入测试（测试是相互独立的）直到失效，测得其寿命为$X_1,X_2,\cdots,X_n$，
+    以$\displaystyle{\overline{X}=\frac{1}{n}\sum_{i=1}^n X_i}$作为$\mu$的估计，为使
+    $P\{|\overline{X}-\mu|<1\}\geq 0.95$，问$n$至少为多少？
+
+    \item 某药厂断言，该厂生产的某种药品对于医治一种疑难血液病的治愈率为0.8 ．医院任
+    意抽查100个服用此药品的病人，若其中多于75人治愈，就接受此断言．否则就拒绝此断言．
+    \begin{enumerate}
+        \item 若实际上此药品对这种疾病的治愈率是0.8，问接受这一断言的概率是多少？
+        \item 若实际上此药品对这种疾病的治愈率为0.7，问接受这一断言的概率是多少？
+    \end{enumerate}
+
+    
+
+    
+
+
+  
+
+\end{enumerate}
+\end{document}
