@@ -1,0 +1,125 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[UTF8]{ctex}
+\usepackage{fontspec}
+\usepackage{geometry} 
+\usepackage{amsmath}
+\usepackage[shortlabels]{enumitem}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{epstopdf}
+\usepackage{amsmath,amssymb}
+\usepackage{diagbox}
+\usepackage{setspace}
+\usepackage{enumitem}
+\DeclareSymbolFont{EulerExtension}{U}{euex}{m}{n}
+\DeclareMathSymbol{\euintop}{\mathop} {EulerExtension}{"52}
+\DeclareMathSymbol{\euointop}{\mathop} {EulerExtension}{"48}
+\let\intop\euintop
+\let\ointop\euointop
+
+\geometry{left=3.17cm,right=3.17cm,top=2.53cm,bottom=2.54cm}
+%\setmainfont{Times New Roman}
+\pagestyle{plain}
+\setlist[enumerate,1]{label=\textbf{\arabic*.}}
+\setlist[enumerate,2]{label=(\arabic*)}
+
+\begin{document}
+
+\begin{enumerate}
+
+
+
+    \item 在总体$N(52,6,3^2)$中随机抽取一容量为36的样本，求样本均值$\overline{X}$落在50.8到53.8之间的概率。
+        
+
+
+    \item  在总体$N(12,4)$中随机抽一容量为5的样本$X_1,X_2,X_3,X_4,X_5$.
+    \begin{enumerate}
+        \item 求样本均值与总体均值之差的绝对值大于1的概率．
+        \item 求概率$P\{\max\{X_1,X_2,X_3,X_4,X_5\}>15\},P\{\min \{X_1,X_2,X_3,X_4,X_5\}<10\}$.
+    \end{enumerate}
+
+
+    \item 求总体$N(20,3)$的容量分别为10,15的两独立样本均值差的绝对值大于0.3的概率．
+    
+
+    \item \begin{enumerate}
+        \item 设样本$X_1,X_2,\cdots,X_6$来自总体$N(0,1),Y=(X_1+X_2+X_3)^2+(X_4+X_5+X_6)^2$，
+        试确定常数$C$使$CY$服从$\chi ^2$分布．
+        \item 设样本$X_1,X_2,\cdots,X_5$来自总体$N(0,1),Y=\dfrac{C(X_1+X_2)}{(X_3^2+X_4^2+X_5^2)^{1/2}}$，试确定
+        常数$C$使$Y$服从$t$分布.
+        \item 已知$X\sim t(n)$，求证$X^2\sim F(1,n)$.
+    \end{enumerate}
+
+
+
+    \item \begin{enumerate}
+        \item 已知某种能力测试的得分服从正态分布$N(\mu,\sigma^2)$．随机取10个人参与这一测试.
+        求他们得分的联合概率密度，并求这10个人得分的平均值小于$\mu$的概率．
+        \item 在（1）中设$\mu=62,\sigma^2=25$，若得分超过70就能得奖，求至少有一人得奖的概率.
+    \end{enumerate}
+
+
+    \item 设总体$X\sim b(1,p),X_1,X_2,\cdots,X_n$是来自$X$的样本
+    \begin{enumerate}
+        \item 求$(X_1,X_2,\cdots,X_n)$的分布律.
+        \item 求$\displaystyle{\sum_{i=1}^n X_i}$的分布律.
+        \item 求$E(\overline{X}),D(\overline{X}),E(S^2)$.
+    \end{enumerate}
+
+
+    \item 设总体$X\sim \chi^2(n),X_1,X_2,\cdots,X_{10}$是来自$X$的样本，求$E(\overline{X}),D(\overline{X}),E(S^2)$.
+    
+
+    \item 设总体$X\sim N(\mu,\sigma^2),X_1,X_2,\cdots,X_{10}$是来自$X$的样本.
+    \begin{enumerate}
+        \item 写出$X_1,X_2,\cdots,X_{10}$的联合概率密度.
+        \item 写出$\overline{X}$的概率密度.
+    \end{enumerate}
+
+
+
+    \item 设在总体$N(\mu,\sigma^2)$中抽得一容量为16的样本，这里$\mu,\sigma^2$均未知.
+    \begin{enumerate}
+        \item 求$P\{S^2/\sigma^2\leq 2.041\}$，其中$S^2$为样本方差.
+        \item 求$D(S^2)$.
+    \end{enumerate}
+
+
+
+    \item 下面列出了30个美国NBA球员的体重（以磅计，$1\mbox{磅}=0.454$kg) 数据．这些数据是
+    从美国NBA球队$1990-1991$赛季的花名册中抽样得到的．
+    $$\begin{array}{cccccccccc}
+        225 & 232 & 232 & 245 & 235 & 245 & 270 & 225 & 240 & 240 \\
+        217 & 195 & 225 & 185 & 200 & 220 & 200 & 210 & 271 & 240 \\
+        220 & 230 & 215 & 252 & 225 & 220 & 206 & 185 & 227 & 236
+    \end{array}$$
+    \begin{enumerate}
+        \item 画出这些数据的频率直方图（提示：最大和最小观察值分别为271和185，区间
+        $[184.5,271.5]$包含所有数据，将整个区间分为5等份，为计算方便．将区间调整为$(179.5,279.5)$.
+        \item 作出这些数据的箱线图.
+    \end{enumerate}
+
+
+    \item {\heiti 截尾数据}$\quad$ 设数据集包含$n$个数据，将这些数据自小到大排序为
+    $$x_{(1)}\leq x_{(2)} \leq \cdots \leq x_{(n)}$$
+    删去$100\alpha \%$个数值小的数，同时删去$100\alpha \%$个数值大的数，将留下的数据取算术平均，记为
+    $\overline{x}_\alpha$，即
+    $$\overline{x}_\alpha=\frac{x_{([n\alpha]+1)}+\cdots+x_{(n-[n\alpha])}}{n-2[n\alpha]}$$
+    其中$[n\alpha]$是小于或等于$n\alpha$的最大整数（一般取$\alpha$为$0.1\sim 0.2$）.$\overline{x}_\alpha$
+    称为$100\alpha\%$截尾均值。例如对于第10题中的数据，取$\alpha=0.1$，则有$[n\alpha]=[300\times 0.1]=3$，得
+    $100\times 0.1\%$截尾均值
+    $$\overline{x}_\alpha=\frac{200+200+\cdots+245+245}{30-6}=225.4167$$
+    \par 若数据来自某一总体的样本，则$\overline{x}_\alpha$是一个统计量． $\overline{x}_\alpha$不受样本的极端值的影响．截尾均
+    值在实际应用问题中是常会用到的．
+    \par 试求第10题的30个数据的$\alpha=0.2$的截尾均值．
+    
+
+    
+
+
+  
+
+\end{enumerate}
+\end{document}
