@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.10)  14 SEP 2021 19:03
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.10)  16 SEP 2021 22:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -524,22 +524,22 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 42.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 52.
 (d:/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 42.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 52.
  (d:/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+euex on input line 42.
+LaTeX Font Info:    Trying to load font information for U+euex on input line 52.
  (d:/texlive/texmf-dist/tex/latex/amsfonts/ueuex.fd
 File: ueuex.fd 2013/01/14 v3.01 Euler extra symbols
 )
 File: 3.pdf Graphic file (type pdf)
 <use 3.pdf>
 
-Overfull \hbox (12.56387pt too wide) in paragraph at lines 75--77
+Overfull \hbox (12.56387pt too wide) in paragraph at lines 85--87
 []\TU/SimSun(0)/m/n/10 将 一 颗 骰 子 掷 两 次，|  考 虑 事 件：| $\OML/cmm/m/it/10 A \OT1/cmr/m/n/10 = []$\TU/lmr/m/n/10 .$\OML/cmm/m/it/10 B \OT1/cmr/m/n/10 = []$\TU/SimSun(0)/m/n/10 ，|
  []
 
@@ -547,14 +547,17 @@ File: 8.pdf Graphic file (type pdf)
 <use 8.pdf>
 [1
 
-] [2] (./概率论拓展习题.aux) ) 
+] [2] [3]
+File: 25.pdf Graphic file (type pdf)
+<use 25.pdf>
+ [4] [5] [6] (./概率论拓展习题.aux) ) 
 Here is how much of TeX's memory you used:
- 9442 strings out of 476476
- 227362 string characters out of 5820060
+ 9461 strings out of 476476
+ 228062 string characters out of 5820060
  602890 words of memory out of 5000000
- 29723 multiletter control sequences out of 15000+600000
+ 29741 multiletter control sequences out of 15000+600000
  407425 words of font info for 55 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 90i,7n,97p,363b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 90i,21n,97p,363b,531s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 概率论拓展习题.pdf (2 pages).
+Output written on 概率论拓展习题.pdf (6 pages).
