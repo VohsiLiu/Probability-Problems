@@ -1,0 +1,181 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[UTF8]{ctex}
+\usepackage{fontspec}
+\usepackage{geometry} 
+\usepackage{amsmath}
+\usepackage[shortlabels]{enumitem}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{epstopdf}
+\usepackage{amsmath,amssymb}
+\usepackage{diagbox}
+\usepackage{setspace}
+\usepackage{enumitem}
+\DeclareSymbolFont{EulerExtension}{U}{euex}{m}{n}
+\DeclareMathSymbol{\euintop}{\mathop} {EulerExtension}{"52}
+\DeclareMathSymbol{\euointop}{\mathop} {EulerExtension}{"48}
+\let\intop\euintop
+\let\ointop\euointop
+
+\geometry{left=3.17cm,right=3.17cm,top=2.53cm,bottom=2.54cm}
+%\setmainfont{Times New Roman}
+\pagestyle{plain}
+\setlist[enumerate,1]{label=\textbf{\arabic*.}}
+\setlist[enumerate,2]{label=(\arabic*)}
+
+\begin{document}
+
+\begin{enumerate}
+
+
+    \item 随机地取8只活塞环．测得它们的直径为（以mm计）
+    $$\begin{array}{cccc}
+        74.001 & 74.005 & 74.003 & 74.001 \\
+        74.000 & 73.998 & 74.006 & 74.002 \\
+    \end{array}$$
+    试求总体均值$\mu$及方差$\sigma^2$的矩估计值，并求样本方差$s^2$.
+
+
+
+    \item 设$X_1,X_2,\cdots,X_n$为总体的一个样本，$x_1,x_2,\cdots,x_n$为一相应的样本值．求下列各总体
+    的概率密度或分布律中的未知参数的矩估计量和矩估计值．
+    \begin{enumerate}
+        \item $$f(x)=\left\{\begin{array}{ll}
+            \theta c^\theta x^{-(\theta+1)}, & x>c \\
+            0, & \mbox{其他}
+        \end{array}\right.$$
+        其中$c>0$为已知，$\theta>1,\theta$为未知参数．
+        \item $$f(x)=\left\{\begin{array}{ll}
+            \sqrt{\theta}  x^{(\sqrt{\theta}-1)}, & 0\leq x\leq 1 \\
+            0, & \mbox{其他}
+        \end{array}\right.$$
+        其中$\theta >0,\theta$为未知参数.
+        \item $$P\{X=x\}=\binom{m}{x} p^x (1-p)^{m-x},x=0,1,2,\cdots,m$$其中$0<p<1,p$为未知参数. 
+    \end{enumerate}
+
+
+
+    \item 求上题中各未知参数的最大似然估计值和估计量．
+    
+
+
+
+
+    \item \begin{enumerate}
+        \item 设总体$X$具有分布律
+        \renewcommand{\arraystretch}{1.3}
+        \begin{table}[H]\centering
+            \begin{tabular}{c|ccc}
+            $X$   & 1            & 2          & 3                                 \\ \hline
+            $p_k$ & $\theta^2$ & $2\theta(1-\theta)$ & $(1-\theta)^2$ 
+            \end{tabular}
+        \end{table}
+        \renewcommand{\arraystretch}{1.0}
+        其中$\theta(0<\theta<1)$为未知参数.已知取得了样本值$x_1=1,x_2=2,x_3=1$．试求$\theta$的矩估计值和最大似
+        然估计值.
+        \item 设$X_1,X_2,\cdots,X_n$是来自参数为$\lambda$的泊松分布总体的一个样本，试求$\lambda$的最大似然
+        估计量及矩估计量．
+        \item 设随机变量$X$服从以$r,p$为参数的负二项分布．其分布律为
+        $$P\{X=k\}=\binom{x_k-1}{r-1}p^r(1-p)^{x_k-r},\quad x_k=r,r+1,\cdots,$$
+        其中$r$已知，$p$未知.设有样本值$x_1,x_2,\cdots,x_n$，试求$p$的最大似然估计值. 
+    \end{enumerate}
+
+
+
+
+    \item 设某种电子器件的寿命（以h计）$T$服从双参数的指数分布，其概率密度为
+    $$f(t)=\left\{\begin{array}{ll}
+        \dfrac{1}{\theta} e^{-(t-c)/\theta}, & t\geq c\\
+        0, & \mbox{其他}
+    \end{array}\right.$$
+    其中$c,\theta(c,\theta>0)$为未知参数．自一批这种器件中随机地取$n$件进行寿命试验．设它们的失
+    效时间依次为$x_1\leq x_2\leq \cdots \leq x_n$.
+    \begin{enumerate}
+        \item 求$\theta$与$e$的最大似然估计值．
+        \item 求$\theta$与$e$的矩估计量．
+    \end{enumerate}
+
+
+
+
+    \item 一地质学家为研究密歇根湖湖滩地区的岩石成分，随机地自该地区取100个样品，每
+    个样品有10块石子、记录了每个样品中属石灰石的石子数．假设这100次观察相互独立．并
+    且由过去经验知，它们都服从参数为$m=10,p$的二项分布，$p$是这地区一块石子是石灰石的
+    概率．求$p$的最大似然估计值.该地质学家所得的数据如下：
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+        \begin{tabular}{c|cccccccccccc}
+        样品中属石灰石的石子数$i$   & 0   & 1  & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\ \hline
+        观察到$i$块石灰石的样品个数 & 0 & 1 & 6 & 7 & 23 & 26 & 21 & 12 & 3 & 1 & 0 
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+
+
+
+
+    \item \begin{enumerate}
+        \item 设$X_1,X_2,\cdots,X_n$是来自总体$X$的一个样本.且$X\sim \pi(\lambda)$，求$P\{X=0\}$的最大似
+        然估计值．
+        \item 某铁路局证实一个扳道员在五年内所引起的严重事故的次数服从泊松分布．求一个
+        扳道员在五年内未引起严重事故的概率$p$的最大似然估计，使用下面122个观察值．下表中，
+        $r$表示一扳道员五年中引起严重事故的次数．$s$表示观察到的扳道员人数．
+        \renewcommand{\arraystretch}{1.3}
+        \begin{table}[H]\centering
+            \begin{tabular}{c|cccccc}
+            $r$ & 0 & 1 & 2 & 3 & 4 & 5   \\ \hline
+            $s$ & 44 & 42 & 21 & 9 & 4 & 2
+            \end{tabular}
+        \end{table}
+        \renewcommand{\arraystretch}{1.0}
+    \end{enumerate}
+    
+
+
+
+    \item \begin{enumerate}
+        \item 设$X_1,X_2,\cdots,X_n$是来自概率密度为
+        $$f(x;\theta)=\left\{\begin{array}{ll}
+            \theta x^{\theta-1}, & 0<x<1\\
+            0, & \mbox{其他}
+        \end{array}\right.$$
+        的总体的样本，$\theta$未知，求$U=e^{-1/\theta}$的最大似然估计值.
+        \item 设$X_1,X_2,\cdots,X_n$是来自正态总体$N(\mu,1)$的样本.$\mu$未知，求$\theta=P\{X>2\}$的最大似
+        然估计值．
+        \item 设$x_1,x_2,\cdots,x_n$是来自总体$b(m,\theta)$的样本值，又$\theta=\dfrac{1}{3}(1+\beta)$，求$P$的最大似然估
+        计值．
+    \end{enumerate}
+    
+
+
+
+
+    \item \begin{enumerate}
+        \item 验证教材第六章$\S\, 3$定理四中的统计量
+        $$S_w^2=\frac{n_1-1}{n_1+n_2-2}S_1^2+\frac{n_2-1}{n_1+n_2-2}S_2^2=\frac{(n_1-1)S_1^2+(n_2-1)S_2^2}{n_1+n_2-2}$$
+        是两总体公共方差$\sigma^2$的无偏估计量（$S_w^2$称为$\sigma^2$的合并估计）．
+        \item 设总体$X$的数学期望为$\mu$，$X_1,X_2,\cdots,X_n$是来自$X$的样本，$a_1,a_2,\cdots,a_n$是任意常
+        数，验证
+        $$\frac{\displaystyle{\sum_{i=1}^n a_i X_i}}{\displaystyle{\sum _{i=1}^n a_i}}\quad(\mbox{其中}\sum_{i=1}^n a_i \neq 0)$$
+        是$\mu$的无偏估计量.
+    \end{enumerate}
+
+
+
+    \item 设$X_1,X_2,\cdots,X_n$是来自总体$X$的一个样本，设$E(X)=\mu,D(X)=\sigma^2$.
+    \begin{enumerate}
+        \item 确定常数$c$，使$$c\sum_{i=1}^{n-1}(X_{i+1}-X_i)^2$$为$\sigma^2$的无偏估计．
+        \item 确定常数$c$，使$(\overline{X}^2-cS^2)$的无偏估计（$\overline{X},S^2$是样本均值和样本方差）．
+    \end{enumerate}
+
+
+
+    \item 
+    
+
+
+  
+
+\end{enumerate}
+\end{document}
