@@ -171,7 +171,186 @@
 
 
 
-    \item 
+    \item 设总体$X$的概率密度为
+    \renewcommand{\arraystretch}{1.3}
+    $$f(x;\theta)=\left\{\begin{array}{ll}
+        \dfrac{1}{\theta}x^{(1-\theta)/\theta}, & 0<x<1\\
+        0, & \mbox{其他}
+    \end{array}\right.\quad 0<\theta<+\infty,$$
+    \renewcommand{\arraystretch}{1.0}
+    $X_1,X_2,\cdots,X_n$是来自总体$X$的样本.
+    \begin{enumerate}
+        \item 验证$\theta$的最大似然估计量是$\displaystyle{\hat{\theta}=\frac{-1}{n}\sum_{i=1}^n \ln X_i}$.
+        \item 证明$\hat{\theta}$是$\theta$的无偏估计量.
+    \end{enumerate}
+
+
+    \item 设$X_1,X_2,X_3,X_4$是来自均值为$\theta$的指数分布总体的样本.其中$\theta$未知．设有估计量
+    \begin{equation}
+        \begin{split}
+            & T_1=\frac{1}{6}(X_1+X_2)+\frac{1}{3}(X_3+X_4),\\
+            & T_2=\frac{X_1+2X_2+3X_3+4X_4}{5},\\
+            & T_3=\frac{X_1+X_2+X_3+X+4}{4}.
+        \end{split}
+        \nonumber
+    \end{equation}
+    \begin{enumerate}
+        \item 指出$T_1,T_2,T_3$中哪几个是$\theta$的无偏估计量．
+        \item 在上述$\theta$的无偏估计中指出哪一个较为有效.
+    \end{enumerate}
+
+
+
+    \item \begin{enumerate}
+        \item 设$\hat{\theta}$是参数$\theta$的无偏估计，且有$D(\hat{\theta})>0$．试证
+        $$\hat{\theta^2}=(\hat{\theta})^2\mbox{不是}\theta^2\mbox{的无偏估计.}$$
+        \item 试证明均匀分布
+        $$f(x)=\left\{\begin{array}{ll}
+            \dfrac{1}{\theta}, & 0<x\leq \theta\\
+            0, & \mbox{其他}
+        \end{array}\right.$$
+        中未知参数$\theta$的最大似然估计量不是无偏的．
+    \end{enumerate}
+
+
+
+
+    \item 设从均值为$\mu$，方差为$\sigma^2>0$的总体中分别抽取容量为$n_1,n_2$的两独立样本．$X_1$和
+    $X_2$分别是两样本的均值.试证：对干任意常数$a,b(a+b+1)$，$Y=a\overline{X}_1+b\overline{X}_2$都是$\mu$的无偏估
+    计，并确定常数$a,b$使$D(Y)$达到最小.
+
+
+
+
+    \item 设有$k$台仪器，已知用第$t$台仪器测量时．测定值总体的标准差为$\sigma_i(i=1,2,\cdots,k)$．
+    用这些仪器独立地对某一物理量$\theta$各观察一次，分别得到$X_1,X_2,\cdots,X_k$.设仪器都没有系统
+    误差，即$E(X_i)=\theta(i=1,2,\cdots,k)$．问$a_1,a_2,\cdots,a_k$取何值，方能使使用$\displaystyle{\hat{\theta}=\sum_{i=1}^k a_iX_i}$估计
+    $\theta$时，$\hat{\theta}$是无偏的，并且$D(\hat{\theta}$最小？
+
+
+
+
+    \item 设某种清漆的9个样品．其干燥时间（以h计）分别为
+    $$\begin{array}{ccccccccc}
+        6.0 & 5.7 & 5.8 & 6.5 & 7.0 & 6.3 & 5.6 & 6.1 & 5.0
+    \end{array}$$
+    设干燥时间总体服从正态分布$N(\mu,\sigma^2)$．求$\mu$的置信水平为0.95的置信区间，（1）若由以往
+    经验知$\sigma=0.6(\mathrm{h})$．（2）若$\sigma$为未知．
+
+
+
+
+    \item 分别使用金球和铅球测定引力常数（单位：$10^{-11}\mathrm{m}^3\cdot\mathrm{kg}^{-1}\cdot\mathrm{s}^{-2}$).
+    \begin{enumerate}
+        \item 用金球测定观察值为
+        $$\begin{array}{cccccc}
+            6.683 & 6.681 & 6.676 & 6.678 & 6.679 & 6.672
+        \end{array}$$
+        \item 用铅球测定观察值为
+        $$\begin{array}{ccccc}
+            6.661 & 6.661 & 6.667 & 6.667 & 6.664 
+        \end{array}$$
+    \end{enumerate}
+    设测定值总体为$N(\mu,\sigma^2),\mu,\sigma^2$均为未知．试就（1），（2）两种情况分别求$\mu$的置信水平为0.9
+    的置信区间，并求$\sigma^2$的置信水平为0.9的置信区间.
+
+
+
+
+    \item 随机地取某种炮弹9发做试验，得炮口速度的样本标准差$s=11\mathrm{m}/\mathrm{s}$．设炮口速度服
+    从正态分布．求这种炮弹的炮口速度的标准差$\sigma$的置信水平为0.95的置信区间.
+
+
+
+
+    \item 设$X_1,X_2,\cdots,X_n$是来自分布$N(\mu,\sigma^2)$的样本，$\mu$已知，$\sigma$未知．
+    \begin{enumerate}
+        \item 验证$\displaystyle{\sum_{i=1}^n (X_i-\mu)^2/\sigma^2}\sim \chi^2$，利用这一结果构造$\sigma^2$的置信水平为$1-\alpha$的置信区间．
+        \item 设$\mu=6.5$，且有样本值7.5，2.0，12.1，8.8，9.4，7.3，1.9，2.8，7.0，7.3，试求$\sigma$
+        的置信水平为0.95的置信区间.
+    \end{enumerate}
+
+
+
+    \item 在第17题中，设用金球和用铅球测定时测定值总体的方差相等．求两个测定值总体
+    均值差的置信水平为0.90的置信区间．
+
+
+
+
+    \item 随机地从$A$批导线中抽4根，又从$B$批导线中抽5根，测得电阻（$\Omega$）为
+    \begin{equation}
+        \begin{split}
+            & A\mbox{批导线：} \quad  0.143 \quad 0.142 \quad 0.143 \quad 0.137\\
+            & B\mbox{批导线：} \quad  0.140 \quad 0.142 \quad 0.136 \quad 0.138 \quad 0.140
+        \end{split}
+        \nonumber
+    \end{equation}
+    设测定数据分别来自分布$N(\mu_1,\sigma^2),N(\mu_2,\sigma^2)$，且两样本相互独立．又$\mu_1,\mu_2,\sigma^2$均为未知，
+    试求$\mu_1-\mu_2$的置信水平为0.95的置信区间.
+
+
+
+
+    \item 研究两种固体燃料火箭推进器的燃烧率．设两者都服从正态分布，并且已知燃烧率
+    的标准差均近似地为0.05$\, $cm/s．取样本容量为$n_1=n_2=20$.得燃烧率的样本均值分别为
+    $\overline{x}_1=18\, $cm/s，$\overline{x}_2=24\, $cm/s，设两祥本独立．求两燃烧率总体均值差$\mu_1-\mu_2$的置信水平为0.99
+    的置信区间．
+
+
+
+
+    \item 设两位化验员$A, B$独立地对某种聚合物含氯量用相同的方法各做10次测定．其测
+    定值的样本方差依次为$s_A^2=0.5419,s_B^2=0.6065$．设$\sigma_A^2,\sigma_B^2$分别为$A,B$所测定的测定值总体
+    的方差.设总体均为正态的，且两样本独立．求方差比的置信水平为0.95的置信区间．
+
+
+    \item 在一批货物的容最为100的样本中，经检验发现有16只次品．试求这批货物次品率
+    的置信水平为0.95的置信区间.
+
+
+
+
+    \item \begin{enumerate}
+        \item 求第16题中$\mu$的置信水平为0.95的单侧置信上限．
+        \item 求第21题中$\mu_1-\mu_2$的置信水平为0.95的单侧置信下限．
+        \item 求第23题中方差比$\sigma_A^2/\sigma_B^2$的置信水平为0.95的单侧置信上限．
+    \end{enumerate}
+
+
+
+
+    \item 为研究某种汽车轮胎的磨损特性，随机地选择16只轮胎，每只轮胎行驶到磨坏为止，
+    记录所行驶的路程（以km计）如下：
+    $$\begin{array}{cccccccc}
+        41\, 250 & 40\, 187 & 43\, 175 & 41\, 010 & 39\, 265 & 41\, 872 & 42\, 654 & 41\, 287\\
+        38\, 970 & 40\, 200 & 42\, 550 & 41\, 095 & 40\, 680 & 43\, 500 & 39\, 775 & 40\, 400 
+    \end{array}$$
+    假设这些数据来自正态总体$N(\mu,\sigma^2)$，其中$\mu,\sigma^2$未知．试求$μ$的置信水平为0.95的单侧置
+    信下限．
+
+
+
+    \item 科学上的重大发现往往是由年轻人做出的．下面列出了自16世纪中叶至20世纪早
+    期的十二项重大发现的发现者和他们发现时的年龄:
+    $$\begin{array}{llll}
+        \mbox{发现内容} & \mbox{发现者} & \mbox{发现时间} & \mbox{年龄}\\
+        \mbox{1.地球绕太阳运转} & \mbox{哥白尼} & 1543   &   40 \\  
+        \mbox{2.望远镜、天文学的基本定律} & \mbox{伽利略} &  1600  & 36   \\  
+        \mbox{3.运动原理、重力、微积分} & \mbox{牛顿} &  1665  &  23  \\  
+        \mbox{4.电的本质} & \mbox{富兰克林} &   1746 &  40  \\  
+        \mbox{5.燃烧是与氧气联系着的} & \mbox{拉瓦锡} & 1774   &  31  \\  
+        \mbox{6.地球是渐进过程演化成的} & \mbox{莱尔} &  1830  &  33  \\  
+        \mbox{7.自然选择控制演化的证据} & \mbox{达尔文} &  1858  & 49   \\  
+        \mbox{8.光的场方程} & \mbox{麦克斯韦} &  1864  &  33  \\  
+        \mbox{9.放射性} & \mbox{居里} &  1896  &  34  \\  
+        \mbox{10.量子论} & \mbox{普朗克} & 1901   &  43  \\  
+        \mbox{11.狭义相对论},E=mc^2 & \mbox{爱因斯坦} &  1905  &  26  \\  
+        \mbox{12.量子论的数学基础} & \mbox{薛定谔} & 1926   &  39  
+    \end{array}$$
+    设样本来自正态总体，试求发现者的平均年龄$\mu$的置信水平为0.95的单侧置信上限．
+
+
     
 
 

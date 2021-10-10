@@ -1,0 +1,241 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[UTF8]{ctex}
+\usepackage{fontspec}
+\usepackage{geometry} 
+\usepackage{amsmath}
+\usepackage[shortlabels]{enumitem}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{epstopdf}
+\usepackage{amsmath,amssymb}
+\usepackage{diagbox}
+\usepackage{setspace}
+\usepackage{enumitem}
+\DeclareSymbolFont{EulerExtension}{U}{euex}{m}{n}
+\DeclareMathSymbol{\euintop}{\mathop} {EulerExtension}{"52}
+\DeclareMathSymbol{\euointop}{\mathop} {EulerExtension}{"48}
+\let\intop\euintop
+\let\ointop\euointop
+
+\geometry{left=3.17cm,right=3.17cm,top=2.53cm,bottom=2.54cm}
+%\setmainfont{Times New Roman}
+\pagestyle{plain}
+\setlist[enumerate,1]{label=\textbf{\arabic*.}}
+\setlist[enumerate,2]{label=(\arabic*)}
+
+\begin{document}
+
+\begin{enumerate}
+
+
+    \item 某批矿砂的5个样品中的镍含量，经测定为（\%）
+    $$\begin{array}{ccccc}
+        3.25 & 3.27 &  3.24 & 3.26 & 3.24
+    \end{array}$$
+    设测定值总体服从正态分布，但参数均未知，问在$\alpha=0.01$下能否接受假设：这批矿砂的镍含
+    量的均值为3.25.
+
+
+    \begin{spacing}{1.5}
+    \item 如果一个矩形的宽度$w$与长度$l$的比$\dfrac{w}{l}=\dfrac{1}{2}(\sqrt{5}-1)\approx 0.618$，这样的矩形称为黄金矩形．
+    \end{spacing}
+    这种尺寸的矩形使人们看上去有良好的感觉．现代的建筑构件（如窗架）、工艺品（如
+    图片镜框），甚至司机的执照、商业的信用卡等常常都是采用黄金矩形．下面列出某工艺品工
+    厂随机取的20个矩形的宽度与长度的比值：
+    $$\begin{array}{cccccccccc}
+        0.693 & 0.749 & 0.654 & 0.670 & 0.662  & 0.672 &  0.615 &  0.606 & 0.690 & 0.628\\
+        0.668 & 0.611 & 0.606 & 0.609  & 0.601 & 0.553 & 0.570  & 0.844 &  0.576 &  0.933 
+    \end{array}$$
+    设这一工厂生产的矩形的宽度与长度的比值总体服从正态分布，其均值为$\mu$，方差为$\sigma^2$，$\mu,\sigma^2$
+    均未知．试检验假设（取$\alpha=0.05$）
+    $$H_0:\mu=0.618,\quad H_1:\mu\neq 0.618$$
+
+
+
+
+
+
+    \item 要求一种元件平均使用寿命不得低于1000$\, \mathrm{h}$，生产者从一批这种元件中随机抽取25
+    件，测得其寿命的平均值为950$\, \mathrm{h}$．已知该种元件寿命服从标准差为$\sigma=100\, \mathrm{h}$的正态分布．试
+    在显著性水平$\alpha=0.05$下判断这批元件是否合格？设总体均值为$\mu$，$\mu$未知．即需检验假设
+    $H_0:\mu\geq 1000,H_1:\mu<1000$.
+
+
+
+
+    \item 下面列出的是某工厂随机选取的20只部件的装配时间（min）:
+    $$\begin{array}{cccccccccc}
+        9.8 &  10.4 &  10.6 &  9.6 &  9.7 &  9.9  & 10.9 &  11.1 &  9.6 &  10.2\\
+        10.3 &  9.6 &  9.9 &  11.2 &  10.6 &  9.8  &  10.5 &  10.1 &  10.5 &  9.7
+    \end{array}$$
+    设装配时间的总体服从正态分布$N(\mu,\sigma^2)$，$\mu,\sigma^2$均未知．是否可以认为装配时间的均值显著
+    大于10（取$\alpha=0.05$)？
+
+
+
+
+
+    \item 按规定，100$\, $g罐头番茄汁中的平均维生素C含量不得少于21$\, $mg/g．现从工厂的产
+    品中抽取17个罐头，其100$\, $g番茄汁中，测得维生素C含量(mg/g)记录如下：
+    $$\begin{array}{ccccccccccccccccc}
+        16 & 25 &  21 & 20 & 23 & 21 & 19 & 15 & 13 & 23 & 17 & 20 & 29 & 18 & 22 & 16 &  22
+    \end{array}$$
+    设维生素含量服从正态分布$N(\mu,\sigma^2)$，$\mu,\sigma^2$均未知，问这批罐头是否符合要求（取显著性水平
+    $\alpha=0.05$).
+
+
+
+
+
+    \item 下表分别给出两位文学家马克$\cdot$吐温的8篇小品文以及斯诺特格拉斯
+    的10篇小品文中由3个字母组成的单字的比例．
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+        \begin{tabular}{c|cccccccccc}
+        马克$\cdot$吐温 & 0.225 & 0.262 & 0.217 & 0.240 & 0.230 & 0.229 & 0.235 & 0.217 &  &  \\ \hline
+        斯诺特格拉斯 & 0.209 & 0.205 & 0.196 & 0.210 & 0.202 & 0.207 & 0.224 & 0.223 & 0.220 & 0.201
+    \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    设两组数据分别来自正态总体，且两总体方差相等，但参数均未知，两样本相互独立．问两位
+    作家所写的小品文中包含由3个字母组成的单字的比例是否有显著的差异（取$\alpha=0.05$)？
+
+
+
+
+    \item 在20世纪70年代后期人们发现，在酿造啤酒时，在麦芽干燥过程中形成致癌物质亚
+    硝基二甲胺（NDMA）到了20世纪80年代初期开发了一种新的麦芽干燥过程下面给出分
+    别在新老两种过程中形成的NDMA含量（以10亿份中的份数计）：
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+    \begin{tabular}{c|cccccccccccc}
+    老过程 & 6 & 4 & 5 & 5 & 6 & 5 & 5 & 6 & 4 & 6 & 7 & 4 \\ \hline
+    新过程 & 2 & 1 & 2 & 2 & 1 & 0 & 3 & 2 & 1 & 0 & 1 & 3
+    \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    设两样本分别来自正态总体，且两总体的方差相等，但参数均未知．两样本独立．分别以$\mu_1,\mu_2$
+    记对应于老、新过程的总体的均值，试检验假设($\alpha=0.05$)
+    $$H_0:\mu_1-\mu_2\leq 2,\quad H_1:\mu_1-\mu_2>2$$
+
+
+
+
+    \item 随机地选了8个人，分别测量了他们在早晨起床时和晚上就寝时的身高(cm)、得到以
+    下的数据
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+        \begin{tabular}{c|cccccccc}
+        \hline
+        序号                             & 1                       & 2                       & 3                       & 4   & 5   & 6   & 7   & 8   \\ \hline
+        早上($x_i$)                      & 172                     & 168                     & 180                     & 181 & 160 & 163 & 165 & 177 \\ \hline
+        \multicolumn{1}{l|}{晚上($y_i$)} & \multicolumn{1}{l}{172} & \multicolumn{1}{l}{167} & \multicolumn{1}{l}{177} & 179 & 159 & 161 & 166 & 175 \\ \hline
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    设各对数据的差$D_i=X_i-Y_i(i=1,2,\cdots,8)$是来自正态总体$N(\mu_D,\sigma^2_D)$的样本，$\mu_D,\sigma^2_D$均未
+    知.问是否可以认为早晨的身高比晚上的身高要高（取$\alpha=0.05$）？
+
+
+
+
+    \item 为了比较用来做鞋子后跟的两种材料的质量，选取了15名男子（他们的生活条件各
+    不相同），每人穿一双新鞋，其中一只是以材料A做后跟，另一只以材料B做后跟，其厚度均
+    为10$\, $mm．过了一个月再测量厚度，得到数据如下：
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+        \begin{tabular}{c|ccccccccccccccc}
+        \hline
+        男子                              & 1                       & 2                       & 3                       & 4   & 5   & 6   & 7   & 8   & 9   & 10  & 11  & 12  & 13  & 14  & 15  \\ \hline
+        材料$A(x_i)$                      & 6.6                     & 7.0                     & 8.3                     & 8.2 & 5.2 & 9.3 & 7.9 & 8.5 & 7.8 & 7.5 & 6.1 & 8.9 & 6.1 & 9.4 & 9.1 \\ \hline
+        \multicolumn{1}{l|}{材料$B(y_i)$} & \multicolumn{1}{l}{7.4} & \multicolumn{1}{l}{5.4} & \multicolumn{1}{l}{8.8} & 8.0 & 6.8 & 9.1 & 6.3 & 7.5 & 7.0 & 6.5 & 4.4 & 7.7 & 4.2 & 9.4 & 9.1 \\ \hline
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    设$D_i=X_i-Y_i(i=1,2,\cdots,15)$是来自正态总体$N(\mu_D,\sigma^2_D)$的样本，$\mu_D,\sigma^2_D$均未知．问是否可
+    以认为以材料A制成的后跟比材料B的耐穿（取$\alpha=0.05$）？
+
+
+
+
+    \item 为了试验两种不同的某谷物的种子的优劣，选取了10块土质不同的土地，并将每块
+    土地分为面积相同的两部分，分别种植这两种种子．设在每块土地的两部分人工管理等条件
+    完全一样．下面给出各块土地上的单位面积产量：
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+        \begin{tabular}{c|cccccccccc}
+        \hline
+        土地编号$i$    & 1  & 2  & 3  & 4  & 5  & 6  & 7  & 8  & 9  & 10 \\ \hline
+        种子$A(x_i)$ & 23 & 35 & 29 & 42 & 39 & 29 & 37 & 34 & 35 & 28 \\ \hline
+        种子$B(y_i)$ & 26 & 39 & 35 & 40 & 38 & 24 & 36 & 27 & 41 & 27 \\ \hline
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    设$D_i=X_i-Y_i(i=1,2,\cdots,10)$是来自正态总体$N(\mu_D,\sigma^2_D)$的样本，$\mu_D,\sigma^2_D$均未知．问以这两
+    种种子种植的谷物的产量是否有显著的差异（取$\alpha=0.05$）？
+
+
+
+
+    \item 一种混杂的小麦品种，株高的标准差为$\sigma_0=14\, \mathrm{cm}$．经提纯后随机抽取10株，它们的
+    株高（以cm计）为
+    $$\begin{array}{cccccccccc}
+        90 & 105 & 101 & 95  & 100 & 100 & 101 & 105 &  93 & 97
+    \end{array}$$
+    考察提纯后群体是否比原群体整齐？取显著性水平$\alpha=0.01$，并设小麦株高服从$N(\mu,\sigma^2)$.
+
+
+
+
+    \item 某种导线，要求其电阻的标准差不得超过$0.005\, \Omega$ ，今在生产的一批导线中取样品9
+    根，测得$s=0.007\, \Omega$，设总体为正态分布，参数均未知．问在显著性水平$\alpha=0.05$下能否认为
+    这批导线的标准差显著地偏大？
+
+
+
+    \item 在第2题中记总体的标准差为$\sigma$ ，试检验假设（取$\alpha=0.05$）
+    $$H_0:\sigma^2=0.11^2,\quad H_1:\sigma^2\neq 0.11^2$$
+
+
+
+
+    \item 测定某种溶液中的水分，它的10个测定值给出$s=0.037\%$ ，设测定值总体为正态分
+    布，$\sigma^2$为总体方差，$\sigma^2$未知．试在显著性水平$\alpha=0.05$下检验假设
+    $$H_0:\sigma\geq 0.04\%,\quad H_1:\sigma<0.04\%$$
+
+
+
+
+    \item 在第6题中分别记两个总体的方差为$\sigma_1^2,\sigma_2^2$．试检验假设（取$\alpha=0.05$）
+    $$H_0:\sigma_1^2=\sigma_2^2, \quad H_1:\sigma_1^2\neq \sigma^2_2$$
+    以说明在第7题中我们假设$\sigma_1^2=\sigma_2^2$是合理的．
+
+
+
+
+    \item 两种小麦品种从播种到抽穗所需的天数如下：
+    \renewcommand{\arraystretch}{1.3}   
+    \begin{table}[H]\centering
+        \begin{tabular}{c|cccccccccc}
+        $x$ & 101 & 100 & 99  & 99 & 98 & 100 & 98 & 99 & 99 & 99  \\ \hline
+        $y$ & 100 & 98  & 100 & 99 & 98 & 99  & 98 & 98 & 99 & 100
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    设两样本依次来自正态总体$N(\mu_1,\sigma_1^2),N(\mu_2,\sigma_2^2)$，$\mu_i,\sigma_i(i=1,2)$均未知，
+    两样本相互独立．
+    \begin{enumerate}
+        \item 试检验假设$H_0:\sigma_1^2=\sigma_2^2,H_1:\sigma_1^2\neq \sigma_2^2$（取$\alpha=0,05$）
+        \item 若能接受$H_0$，接着检验假设$H^\prime_0:\mu_1=\mu_2,H^\prime_1:\mu_1\neq \mu_2$ （取$\alpha=0.05$） .
+    \end{enumerate}
+
+
+
+    
+
+
+  
+
+\end{enumerate}
+\end{document}

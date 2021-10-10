@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.10)  20 SEP 2021 22:18
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.10)  10 OCT 2021 15:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**chapter7
-(./chapter7.tex
+**chapter8
+(./chapter8.tex
 LaTeX2e <2021-06-01> patch level 1
 L3 programming layer <2021-07-12> (d:/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
@@ -414,8 +414,8 @@ Package: array 2021/04/20 v2.5e Tabular extension package (FMi)
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
 \symEulerExtension=\mathgroup6
- (./chapter7.aux)
-\openout1 = `chapter7.aux'.
+ (./chapter8.aux)
+\openout1 = `chapter8.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
@@ -535,18 +535,26 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Trying to load font information for U+euex on input line 33.
  (d:/texlive/texmf-dist/tex/latex/amsfonts/ueuex.fd
 File: ueuex.fd 2013/01/14 v3.01 Euler extra symbols
-) [1
+)
+Overfull \hbox (3.08263pt too wide) in paragraph at lines 95--99
+ [][] 
+ []
 
-] [2] [3] [4]
-Missing character: There is no μ ("3BC) in font cmmi10!
- [5] (./chapter7.aux) ) 
+[1
+
+]
+Overfull \hbox (14.63507pt too wide) in paragraph at lines 148--154
+ [][] 
+ []
+
+[2] [3] (./chapter8.aux) ) 
 Here is how much of TeX's memory you used:
- 9392 strings out of 476476
- 225187 string characters out of 5820060
- 589893 words of memory out of 5000000
- 29676 multiletter control sequences out of 15000+600000
+ 9393 strings out of 476476
+ 225216 string characters out of 5820060
+ 603893 words of memory out of 5000000
+ 29677 multiletter control sequences out of 15000+600000
  407425 words of font info for 55 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 90i,15n,97p,364b,513s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 90i,10n,97p,364b,472s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter7.pdf (5 pages).
+Output written on chapter8.pdf (3 pages).
