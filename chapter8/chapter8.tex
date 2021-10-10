@@ -12,6 +12,7 @@
 \usepackage{diagbox}
 \usepackage{setspace}
 \usepackage{enumitem}
+\usepackage[table,xcdraw]{xcolor}
 \DeclareSymbolFont{EulerExtension}{U}{euex}{m}{n}
 \DeclareMathSymbol{\euintop}{\mathop} {EulerExtension}{"52}
 \DeclareMathSymbol{\euointop}{\mathop} {EulerExtension}{"48}
@@ -209,6 +210,14 @@
 
     \item 在第6题中分别记两个总体的方差为$\sigma_1^2,\sigma_2^2$．试检验假设（取$\alpha=0.05$）
     $$H_0:\sigma_1^2=\sigma_2^2, \quad H_1:\sigma_1^2\neq \sigma^2_2$$
+    以说明在第6题中我们假设$\sigma_1^2=\sigma_2^2$是合理的．
+
+
+
+
+
+    \item 在第7题中分别记两个总体的方差为$\sigma_1^2,\sigma_2^2$．试检验假设（取$\alpha=0.05$）
+    $$H_0:\sigma_1^2=\sigma_2^2, \quad H_1:\sigma_1^2\neq \sigma^2_2$$
     以说明在第7题中我们假设$\sigma_1^2=\sigma_2^2$是合理的．
 
 
@@ -227,10 +236,89 @@
     两样本相互独立．
     \begin{enumerate}
         \item 试检验假设$H_0:\sigma_1^2=\sigma_2^2,H_1:\sigma_1^2\neq \sigma_2^2$（取$\alpha=0,05$）
-        \item 若能接受$H_0$，接着检验假设$H^\prime_0:\mu_1=\mu_2,H^\prime_1:\mu_1\neq \mu_2$ （取$\alpha=0.05$） .
+        \item 若能接受$H_0$，接着检验假设$H^\prime_0:\mu_1=\mu_2,H^\prime_1:\mu_1\neq \mu_2$ （取$\alpha=0.05$）.
     \end{enumerate}
 
 
+
+
+    \item 用一种叫“混乱指标”的尺度去衡量工程师的英语文章的可理解性，对混乱指标的打
+    分越低表示可理解性越高．分别随机选取13篇刊载在工程杂志上的论文，以及10篇未出版
+    的学术报告，对它们的打分列于下表：
+    \renewcommand{\arraystretch}{1.3} 
+    \begin{table}[H]\centering
+    \begin{tabular}{cccc|cccc}
+        \hline
+        \multicolumn{4}{c|}{工程杂志上的论文（数据\uppercase\expandafter{\romannumeral1}）} & \multicolumn{4}{c}{未出版的学术报告（数据\uppercase\expandafter{\romannumeral2}）}         \\ \hline
+        1.79   & 1.75   & 1.67   & 1.65   & 2.39      & 2.51      & 2.86     & {\color[HTML]{FFFFFF} 2.86} \\
+        1.87   & 1.74   & 1.94   &        & 2.56      & 2.29      & 2.49     & {\color[HTML]{FFFFFF} 2.86} \\
+        1.62   & 2.06   & 1.33   &        & 2.36      & 2.58      &          & {\color[HTML]{FFFFFF} 2.49} \\
+        1.96   & 1.69   & 1.70   &        & 2.62      & 2.41      &          & {\color[HTML]{FFFFFF} 2.49} \\ \hline
+    \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0} 
+    设数据\uppercase\expandafter{\romannumeral1},\uppercase\expandafter{\romannumeral2}分别来自正态总体$N(\mu_1,\sigma_1^2),N(\mu_2,\sigma_2^2)$
+    ，$\mu_1,\mu_2,\sigma_1^2,\sigma_2^2$均未知，两样本独立．
+    \begin{enumerate}
+        \item 试检验假设$H_0:\sigma_1^2=\sigma_2^2,H_1:\sigma_1^2\neq \sigma_2^2$（取$\alpha=0.1$）.
+        \item 若能接受$H_0$，接着检验假设$H^\prime_0:\mu_1=\mu_2,H^\prime_1:\mu_1\neq \mu_2$ （取$\alpha=0.1$） .
+    \end{enumerate}
+
+
+
+
+    \item 有两台机器生产金属部件．分别在两台机器所生产的部件中各取一容量$n_1=60,n_2=40$
+    的样本，测得部件重量（以kg计）的样本方差分别为$s_1^2=15.46,s_2^2=9.66$．设两样本相互
+    独立．两总体分别服从$N(\mu_1,\sigma_1^2),N(\mu_2,\sigma_2^2)$分布，$\mu_i,\sigma_i^2(i=1,2)$均未知．试在显著性水平
+    $\alpha=0.05$下检验假设
+    $$H_0:\sigma_1^2\leq \sigma_2^2,\quad H_1:\sigma_1^2>\sigma_2^2$$
+
+
+
+
+    \item 设需要对某一正态总体的均值进行假设检验
+    $$H_0:\mu \geq 15,\quad H_1:\mu <15$$
+    已知$\sigma^2=2.5$．取$\alpha=0.05$．若要求当$H_1$中的$\mu\leq 13$时犯第\uppercase\expandafter{\romannumeral2}类错误的概率不超过$\beta=0.05$,
+    求所需的样本容量．
+
+
+
+
+    \item 电池在货架上滞留的时间不能太长．下面给出某商店随机选取的8只电池的货架滞
+    留时间（以天计）：
+    $$\begin{array}{cccccccc}
+        108 & 124 & 124 & 106 & 138 & 163 & 159 & 134
+    \end{array}$$
+    设数据来自正态总体$N(\mu,\sigma^2),\mu,\sigma^2$未知．
+    \begin{enumerate}
+        \item 试检验假设$H_0:\mu \leq 125,H_1:\mu >125$，取$\alpha=0.05$
+        \item 若要求在上述$H_1$中$(\mu/125)\sigma\geq 1.4$时，犯第\uppercase\expandafter{\romannumeral2}类错误的概率不超过$\beta=0.1$,
+        求所需的样本容量．
+    \end{enumerate}
+
+
+
+
+    \item 一药厂生产一种新的止痛片，厂方希望验证服用新药片后至开始起作用的时间间隔
+    较原有止痛片至少缩短一半，因此厂方提出需检验假设
+    $$H_0:\mu_1\leq 2\mu_2,\quad H_1:\mu_1>2\mu_2$$
+    此处$\mu_1,\mu_2$分别是服用原有止痛片和服用新止痛片后至起作用的时间间隔的总体的均值．设
+    两总体均为正态且方差分别为已知值$\sigma_1^2,\sigma_2^2$。现分别在两总体中取一样本$X_1,X_2,\cdots,X_{n_1}$和
+    $Y_1,Y_2,\cdots,Y_{n_2}$，设两个样本独立．试给出上述假设$H_0$的拒绝域，取显著性水平为$\alpha$.
+
+
+
+
+    \item 检查了一本书的100页，记录各页中印刷错误的个数，其结果为
+    \renewcommand{\arraystretch}{1.3} 
+    \begin{table}[H]\centering
+        \begin{tabular}{c|cccccccc}
+        错误个数$f_i$    & 0  & 1  & 2  & 3 & 4 & 5 & 6 & $\geq$7 \\ \hline
+        含$f_i$个错误的页数 & 36 & 40 & 19 & 2 & 0 & 2 & 1 & 0      
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0} 
+    问能否认为一页的印刷错误的个数服从泊松分布（取$\alpha=0.05$）.
 
     
 
