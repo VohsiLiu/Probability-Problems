@@ -1,0 +1,101 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[UTF8]{ctex}
+\usepackage{fontspec}
+\usepackage{geometry} 
+\usepackage{amsmath}
+\usepackage[shortlabels]{enumitem}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{epstopdf}
+\usepackage{amsmath,amssymb}
+\usepackage{diagbox}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage[table,xcdraw]{xcolor}
+\DeclareSymbolFont{EulerExtension}{U}{euex}{m}{n}
+\DeclareMathSymbol{\euintop}{\mathop} {EulerExtension}{"52}
+\DeclareMathSymbol{\euointop}{\mathop} {EulerExtension}{"48}
+\let\intop\euintop
+\let\ointop\euointop
+
+\geometry{left=3.17cm,right=3.17cm,top=2.53cm,bottom=2.54cm}
+%\setmainfont{Times New Roman}
+\pagestyle{plain}
+\setlist[enumerate,1]{label=\textbf{\arabic*.}}
+\setlist[enumerate,2]{label=(\arabic*)}
+
+\begin{document}
+    以下约定各个习题均符合涉及的方差分析模型或回归分析模型所要求的条件．
+\begin{enumerate}
+
+
+    \item 今有某种型号的电池三批，它们分别是$A,B,C$三个工广所生产的．为评比其质拔，各
+    随机抽取5只电池为样品，经试验得其寿命（h）如下：
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+        \begin{tabular}{cccccc}
+        \hline
+        \multicolumn{2}{c}{$A$} & \multicolumn{2}{c}{$B$} & \multicolumn{2}{c}{$C$} \\ \hline
+        40         & 42         & 26         & 28         & 39         & 50         \\
+        48         & 45         & 34         & 32         & 40         & 50         \\
+        \multicolumn{2}{c}{38}  & \multicolumn{2}{c}{30}  & \multicolumn{2}{c}{43}  \\ \hline
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    试在显著性水平0.05下检验电池的平均寿命有无显著的差异．若差异是显著的，试求均值差
+    $\mu_A-\mu_B,\mu_A-\mu_C$和$\mu_B-\mu_C$的置信水平为95\%的置信区间．
+
+
+
+    
+    \item 为了寻找飞机控制板上仪器表的最佳布置，试验了三个方案．观察领航员在紧急情况
+    的反应时间（以$1/10$秒计），随机地选择28名领航员．得到他们对于不同的布置方案的反应时
+    间如下：
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+        \begin{tabular}{ccccccccccccc}
+        \hline
+        方案\uppercase\expandafter{\romannumeral1} & 14 & 13 & 9 & 15 & 11 & 13 & 14 & 11 &    &   &    &   \\ \hline
+        方案\uppercase\expandafter{\romannumeral2} & 10 & 12 & 7 & 11 & 8  & 12 & 9  & 10 & 13 & 9 & 10 & 9 \\ \hline
+        方案\uppercase\expandafter{\romannumeral3} & 11 & 5  & 9 & 10 & 6  & 8  & 8  & 7  &    &   &    &   \\ \hline
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    试在显著性水平0.05下检验各个方案的反应时间有无显著差异．若有差异．试求$\mu_1-\mu_2$,
+    $\mu_1-\mu_3,\mu_2-\mu_3$的置信水平为0.95的置信区间．
+
+
+
+
+
+    \item 某防治站对4个林场的松毛虫密度进行调查，每个林场调查5块地得资料如下表：
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+        \begin{tabular}{cccccc}
+        \hline
+        地点    & \multicolumn{5}{c}{松毛虫密度（头/标准地）} \\ \hline
+        $A_1$ & 192  & 189  & 176  & 185  & 190  \\
+        $A_2$ & 190  & 201  & 187  & 196  & 200  \\
+        $A_3$ & 188  & 179  & 191  & 183  & 194  \\
+        $A_4$ & 187  & 180  & 188  & 175  & 182  \\ \hline
+        \end{tabular}
+        \end{table}
+    判断4个林场松毛虫密度有无显著差异．取显著性水平$\alpha=0.05$.
+    \renewcommand{\arraystretch}{1.0}
+    
+
+
+
+
+
+
+
+
+
+
+
+  
+
+\end{enumerate}
+\end{document}
