@@ -13,6 +13,7 @@
 \usepackage{setspace}
 \usepackage{enumitem}
 \usepackage[table,xcdraw]{xcolor}
+\usepackage{multirow}
 \DeclareSymbolFont{EulerExtension}{U}{euex}{m}{n}
 \DeclareMathSymbol{\euintop}{\mathop} {EulerExtension}{"52}
 \DeclareMathSymbol{\euointop}{\mathop} {EulerExtension}{"48}
@@ -83,7 +84,96 @@
         \end{table}
     判断4个林场松毛虫密度有无显著差异．取显著性水平$\alpha=0.05$.
     \renewcommand{\arraystretch}{1.0}
-    
+
+
+
+
+    \item 一试验用来比较4种不同药品解除外科手术后疼痛的延续时间（h），结果如下表：
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+        \begin{tabular}{cccccc}
+        \hline
+        药品  & \multicolumn{5}{c}{时间长度（h）} \\ \hline
+        $A$ & 8   & 6   & 4   & 2   &     \\
+        $B$ & 6   & 6   & 4   & 4   &     \\
+        $C$ & 8   & 10  & 10  & 10  & 12  \\
+        $D$ & 4   & 4   & 2   &     &     \\ \hline
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    试在显著性水平$\alpha=0.05$下检验各种药品对解除疼痛的延续时间有无显著差异．
+
+
+
+
+    \item 将抗生素注入人体会产生抗生素与血浆蛋白质结合的现象，以致减少了药效．下表列
+    出5种常用的抗生素注入牛的体内时，抗生索与血浆蛋白质结合的百分比．
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+        \begin{tabular}{ccccc}
+        \hline
+        青霉素  & 四环素  & 链霉素  & 红霉素  & 氯霉素  \\ \hline
+        29.6 & 27.3 & 5.8  & 21.6 & 29.2 \\
+        24.3 & 32.6 & 6.2  & 17.4 & 32.8 \\
+        28.5 & 30.8 & 11.0 & 18.3 & 25.0 \\
+        32.0 & 34.8 & 8.3  & 19.0 & 24.2 \\ \hline
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    试在显著性水平$\alpha=0.05$检验这些百分比的均值有无显著的差异．
+
+
+
+    \item 下表给出某种化工过程在三种浓度、四种温度水平下得率的数据：
+    \renewcommand{\arraystretch}{1.8}
+    \begin{table}[H]\centering
+    \begin{tabular}{cc|cccc}
+    \hline
+                                                                          &     & \multicolumn{4}{c}{温度（因素$B$）}                                                                                                \\ \cline{3-6} 
+                                                                          &     & 10$^{\circ}$C                                 & 24$^{\circ}$C                                 & 38$^{\circ}$C                                 & 52$^{\circ}$C            \\ \hline
+    \multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}浓度\\ （因素$A$）\end{tabular}} & 2\% & \multicolumn{1}{c|}{$14 \quad 10$} & \multicolumn{1}{c|}{$11 \quad 11$} & \multicolumn{1}{c|}{$13 \quad 9$}  & $10 \quad 12$ \\ \cline{3-6} 
+                                                                          & 4\% & \multicolumn{1}{c|}{$9 \quad 7$}   & \multicolumn{1}{c|}{$10 \quad 8$}  & \multicolumn{1}{c|}{$7 \quad 11$}  & $6 \quad 10$  \\ \cline{3-6} 
+                                                                          & 6\% & \multicolumn{1}{c|}{$5 \quad 11$}  & \multicolumn{1}{c|}{$13\quad 14$}  & \multicolumn{1}{c|}{$12 \quad 13$} & $14 \quad 10$ \\ \hline
+    \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    试在显茗性水平$\alpha=0.05$下检验：在不同浓度下得率的均值是否有显著差异，在不同温度下
+    得率的均值是否有显著差异．交互作用的效应是否显著．
+
+
+
+
+    \item 为了研究某种金属管防腐蚀的功能，考虑了4种不同的涂料涂层．将金属管埋设在3
+    种不同性质的土壤中，经历了一定时间，消得金属管腐蚀的最大深度如下表所示（以mm计）：
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+    \begin{tabular}{c|ccc}
+    \hline
+                                                                          & \multicolumn{3}{c}{土壤类型（因素$B$）} \\ \hline
+    \multirow{5}{*}{\begin{tabular}[c]{@{}c@{}}涂层\\ （因素$A$）\end{tabular}} & 1         & 2        & 3        \\ \cline{2-4} 
+                                                                          & 1.63      & 1.35     & 1.27     \\
+                                                                          & 1.34      & 1.30     & 1.22     \\
+                                                                          & 1.19      & 1.14     & 1.27     \\
+                                                                          & 1.30      & 1.09     & 1.32     \\ \cline{1-4} 
+    \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    试取显著性水平$\alpha=0.05$检验在不同涂层下腐蚀的最大深度的平均值有无显著差异．在不同
+    土壤下腐蚀的最大深度的平均值有无显著差异．设两因素间没有交互作用效应．
+
+
+
+
+    \item 下表数据是退火温度（$^{\circ}\mathrm{C}$）对黄铜延性$Y$效应的试验结果．$Y$是以延长度计算的．
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+        \begin{tabular}{c|cccccc}
+        $x(^{\circ}\mathrm{C})$   & 300 & 400 & 500 & 600 & 700 & 800 \\ \hline
+        $y(\%)$ & 40  & 50  & 55  & 60  & 67  & 70 
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    画出散点图并求$Y$对于$x$的线性回归方程。
 
 
 
