@@ -1,0 +1,96 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[UTF8]{ctex}
+\usepackage{fontspec}
+\usepackage{geometry} 
+\usepackage{amsmath}
+\usepackage[shortlabels]{enumitem}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{epstopdf}
+\usepackage{amsmath,amssymb}
+\usepackage{diagbox}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{multirow}
+\DeclareSymbolFont{EulerExtension}{U}{euex}{m}{n}
+\DeclareMathSymbol{\euintop}{\mathop} {EulerExtension}{"52}
+\DeclareMathSymbol{\euointop}{\mathop} {EulerExtension}{"48}
+\let\intop\euintop
+\let\ointop\euointop
+
+\geometry{left=3.17cm,right=3.17cm,top=2.53cm,bottom=2.54cm}
+%\setmainfont{Times New Roman}
+\pagestyle{plain}
+\setlist[enumerate,1]{label=\textbf{\arabic*.}}
+\setlist[enumerate,2]{label=(\arabic*)}
+
+\begin{document}
+
+    
+\begin{enumerate}
+
+
+    \item 设$X_1,X_2$是数学期望为$\theta$的指数分布总体$X$的容量为2的样本，设$Y=\sqrt{X_1X_2}$，试
+    证明:
+    $$E(\frac{4Y}{\pi})=\theta$$
+
+
+
+
+
+    \item 设总体$X\sim N(\mu,\sigma^2),X_1,X_2,\cdots,X_n$是一个样本，$\overline{X},S^2$分别为样本均值和样本方差，
+    试证
+    $$E[(\overline{X}S^2)^2]=\left(\frac{\sigma^2}{n}+\mu^2\right)\left(\frac{2\sigma^4}{n-1}+\sigma^4\right)$$
+
+
+
+
+
+
+
+    \item 设总体$X$具有概率密度
+    $$f(x)=\left\{\begin{array}{ll}
+        \dfrac{1}{\theta}xe^{-x/\theta}, & x>0\\
+        0, & x\leq 0
+    \end{array}\right.$$
+    其中$\theta>0$为未知参数，$X_1,X_2,\cdots,X_n$是来自$X$的样本，$x_1,x_2,\cdots,x_n$是相应的样本观察值．
+    \begin{enumerate}
+        \item 求$\theta$的最大似然估计量．
+        \item 求$\theta$的矩估计量.
+        \item 问求得的估计量是否是无偏估计量．
+    \end{enumerate}
+
+
+
+
+    \item 设$X_1,X_2,\cdots,X_n$以及$Y_1,Y_2,\cdots,Y_n$为分别来自总体$N(\mu_1,\sigma^2)$与$N(\mu_2,\sigma^2)$的样本，
+    且它们相互独立，$\mu_1,\mu_2,\sigma^2$均未知，试求$\mu_1,\mu_2,\sigma^2$的最大似然估计量．
+
+
+
+
+    \item 为了研究一批贮存着的产品的可靠性，在产品投入贮存时， 即在时刻$t_0=0$时，随机
+    地选定$n$件产品，然后在预先规定的时刻$t_1,t_2,\cdots,t_k$取出来进行检测（检测时确定已失效的
+    去掉，将未失效的继续投入贮存），今得到以下的寿命试验数据：
+    
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+\end{enumerate}
+\end{document}
