@@ -27,7 +27,12 @@
 \setlist[enumerate,2]{label=(\arabic*)}
 
 \begin{document}
-    以下约定各个习题均符合涉及的方差分析模型或回归分析模型所要求的条件．
+    
+    
+    {\kaishu 以下约定各个习题均符合涉及的方差分析模型或回归分析模型所要求的条件．}
+
+
+    
 \begin{enumerate}
 
 
@@ -176,6 +181,182 @@
     画出散点图并求$Y$对于$x$的线性回归方程。
 
 
+
+
+    \item 在钢线碳含量对于电阻的效应的研究中，得到以下的数据：
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+        \begin{tabular}{c|ccccccc}
+        \hline
+        碳含量$x(\%)$  & 0.10 & 0.30 & 0.40 & 0.55 & 0.70 & 0.80 & 0.95 \\ \hline
+        20$^{\circ}$C时的电阻$y(\mu\Omega)$ & 15   & 18   & 19   & 21   & 22.6 & 23.8 & 26   \\ \hline
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    \begin{enumerate}
+        \item 画出散点图.
+        \item 求线性回归方程$\hat{y}=\hat{a}+\hat{b}x$.
+        \item 求$\varepsilon$的方差$\sigma^2$的无偏估计．
+        \item 检验假设$H_0:b=0,H_1:b\neq 0$.
+        \item 若回归效果显著，求$b$的置信水平为0.95的置信区间．
+        \item 求$x=0.50$处$\mu(x)$的置信水平为0.95的置信区间．
+        \item 求$x=0.50$处观察值$Y$的置信水平为0.95的预测区间．
+    \end{enumerate}
+
+
+    \item 下表列出了18名$5\sim 8$岁儿童的体重（这是容易测得的）和体积（这是难以测得的）：
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+        \begin{tabular}{c|ccccccccc}
+        \hline
+        体重$x(\mathrm{kg})$            & 17.1 & 10.5 & 13.8 & 15.7 & 11.9 & 10.4 & 15.0 & 16.0 & 17.8 \\ \hline
+        体积$y(\mathrm{dm^3}$) & 16.7 & 10.4 & 13.5 & 15.7 & 11.6 & 10.2 & 14.5 & 15.8 & 17.6 \\ \hline
+        体重$x(\mathrm{kg})$           & 15.8 & 15.1 & 12.1 & 18.4 & 17.1 & 16.7 & 16.5 & 15.1 & 15.1 \\ \hline
+        体积$y(\mathrm{dm^3}$) & 15.2 & 14.8 & 11.9 & 18.3 & 16.7 & 16.6 & 15.9 & 15.1 & 14.5 \\ \hline
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    \begin{enumerate}
+        \item 画出散点图.
+        \item 求$Y$关于$x$的线性回归方程$\hat{y}=\hat{a}+\hat{b}x$.
+        \item 求$x=14.0$时$Y$的置信水平为0.95的预测区间．
+    \end{enumerate}
+
+
+
+
+
+    \item 蟋蟀用一个翅膀在另一翅膀上快速地滑动，从而发出吱吱喳喳的叫声．生物学家知
+    道叫声的频率$x$与气温$y$具有线性关系．下表列出了15对频率与气温间的对应关系的观察
+    结果：
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+        \begin{tabular}{c|cccccccc}
+        \hline
+        频率$x_i$（叫声数/秒） & 20.0 & 16.0 & 19.8 & 18.4 & 17.1 & 15.5 & 14.7 & 17.1 \\ \hline
+        气温$y_i$($^{\circ}$C)     & 31.4 & 22.0 & 34.1 & 29.1 & 27.0 & 24.0 & 20.9 & 27.8 \\ \hline
+        频率$x_i$（叫声数/秒） & 15.4 & 16.2 & 15.0 & 17.2 & 16.0 & 17.0 & 14.4 &      \\ \hline
+        气温$y_i$($^{\circ}$C)     & 20.8 & 28.5 & 26.4 & 28.1 & 27.0 & 28.6 & 24.6 &      \\ \hline
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    试求$Y$关于$x$的线性回归方程．
+
+
+
+
+    \item 下面列出了自1952年$\sim$2004年各届奥林匹克运动会男子10 000米赛跑的冠军的成
+    绩（时间以min计）：
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+        \begin{tabular}{c|ccccccc}
+        \hline
+        年份($x$) & 1952 & 1956 & 1960 & 1964 & 1968 & 1972 & 1976 \\ \hline
+        成绩($y$) & 29.3 & 28.8 & 28.5 & 28.4 & 28.4 & 27.6 & 27.7 \\ \hline
+        年份($x$) & 1980 & 1984 & 1988 & 1992 & 1996 & 2000 & 2004 \\ \hline
+        成绩($y$) & 27.7 & 27.8 & 27.4 & 27.8 & 27.1 & 27.3 & 27.1 \\ \hline
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    \begin{enumerate}
+        \item 求$Y$关于$x$的线性回归方程$\hat{y}=\hat{a}+\hat{b}x$.
+        \item 检验假设$H_0:b=0,H_1:b\neq 0$（显著性水平$\alpha=0.05$）.
+        \item 求2008年冠军成绩的预测值．
+    \end{enumerate}
+
+
+
+    \item 以$x$与$Y$分别表示人的脚长（英寸) 与手长（英寸），下面列出了15名女子的脚的长
+    度$x$与手的长度$Y$的样本值：
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+        \begin{tabular}{c|cccccccc}
+        \hline
+        $x$ & 9.00 & 8.50 & 9.25 & 9.75  & 9.00  & 10.00 & 9.50 & 9.00 \\ \hline
+        $y$ & 6.50 & 6.25 & 7.25 & 7.00  & 6.75  & 7.00  & 6.50 & 7.00 \\ \hline
+        $x$ & 9.25 & 9.50 & 9.25 & 10.00 & 10.00 & 9.75  & 9.50 &      \\ \hline
+        $y$ & 7.00 & 7.00 & 7.00 & 7.50  & 7.25  & 7.25  & 7.25 &      \\ \hline
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    试求：\begin{enumerate}
+        \item $Y$关于$x$的线性回归方程$\hat{y}=\hat{a}x+\hat{b}$．
+        \item 求$b$的置信水平为0.95的置信区间．
+    \end{enumerate}
+
+
+
+
+
+    \item 槲寄生是一种寄生在大树上部树枝上的寄生植物．它喜欢寄生在年轻的大树上．下
+    面给出在一定条件下完成的试验中采集的数据：
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+    \begin{tabular}{c|ccccc}
+    \hline
+    大树的年龄$x$（年）                                                                & 3  & 4  & 9  & 15 & 40 \\ \hline
+    \multirow{3}{*}{\begin{tabular}[c]{@{}c@{}}每株大树上槲\\ 寄生的株数$y$\end{tabular}} & 28 & 10 & 15 & 6  & 1  \\ \cline{2-6} 
+                                                                               & 33 & 36 & 22 & 14 & 1  \\ \cline{2-6} 
+                                                                               & 22 & 24 & 10 & 9  &    \\ \hline
+    \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    \begin{enumerate}
+        \item 作出$(x_i,y_i)$的散点图.
+        \item 令$z_i=\ln y_i$，作出$(x_i,y_i)$的散点图．
+        \item 以模型$Y=ae^{bx}\varepsilon,\ln \varepsilon \sim N(0,\sigma^2)$拟合数据，其中$a,b,\sigma^2$与$x$无关．试求曲线回归方
+        程$\hat{y}=\hat{a}e^{\hat{b}x}$.
+    \end{enumerate}
+
+
+
+
+    \item 一种合金在某种添加剂的不同浓度之下，各做三次试验，得数据如下：   
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+        \begin{tabular}{c|ccccc}
+        \hline
+        浓度$x$                    & 10.0 & 15.0 & 20.0 & 25.0 & 30.0 \\ \hline
+        \multirow{3}{*}{抗压强度$y$} & 25.2 & 29.8 & 31.2 & 31.7 & 29.4 \\ \cline{2-6} 
+                                 & 27.3 & 31.1 & 32.6 & 30.1 & 30.8 \\ \cline{2-6} 
+                                 & 28.7 & 27.8 & 29.7 & 32.3 & 32.8 \\ \hline
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    \begin{enumerate}
+        \item 作散点图.
+        \item 以模型$Y=b_0+b_1x+b_2x^2+\varepsilon,\varepsilon\sim N(0,1)$拟合数据，其中$b_0,b_1,b_2,\sigma^2$与$x$无关．
+        求回归方程$\hat{y}=\hat{b}_0+\hat{b}_1x+\hat{b}_2x^2$.
+    \end{enumerate}
+
+
+
+
+
+
+
+    \item 某种化工产品的得率$Y$与反应温度$x_1$、反应时间$x_2$及某反应物浓度$x_3$有关．今得试
+    验结果如下表所示，其中$x_1,x_2,x_3$均为二水平且均以编码形式表达．
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+        \begin{tabular}{c|cccccccc}
+        \hline
+        $x_1$ & $-1$ & $-1$ & $-1$ & $-1$ & 1    & 1    & 1    & 1    \\ \hline
+        $x_2$ & $-1$ & $-1$ & 1    & 1    & $-1$ & $-1$ & 1    & 1    \\ \hline
+        $x_3$ & $-1$ & 1    & $-1$ & 1    & $-1$ & 1    & $-1$ & 1    \\ \hline
+        得率    & 7.6  & 10.3 & 9.2  & 10.2 & 8.4  & 11.1 & 9.8  & 12.6 \\ \hline
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    \begin{enumerate}
+        \item 设$\mu(x_1,x_2,x_3)=b_0+b_1x_1+b_2x_2+b_3x_3$，求$Y$的多元线性回归方程．
+        \item 若认为反应时间不影响得率．即认为
+        $$\mu(x_1,x_2,x_3)=\beta_0+\beta_1x_1+\beta_3x_3,$$
+        求$Y$的多元线性回归方程．
+    \end{enumerate}
+
+
+    
 
 
 
