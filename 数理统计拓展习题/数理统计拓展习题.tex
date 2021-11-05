@@ -74,8 +74,201 @@
     \item 为了研究一批贮存着的产品的可靠性，在产品投入贮存时， 即在时刻$t_0=0$时，随机
     地选定$n$件产品，然后在预先规定的时刻$t_1,t_2,\cdots,t_k$取出来进行检测（检测时确定已失效的
     去掉，将未失效的继续投入贮存），今得到以下的寿命试验数据：
+    \renewcommand{\arraystretch}{1.4}
+    \begin{table}[H]\centering
+        \begin{tabular}{c|cccccc}
+        \hline
+        检测时刻（月）              & $t_1$     & $t_2$       & $\cdots$ & $t_k$           &                &                        \\ \hline
+        区间$(t_{i-1},t_i]$    & $(0,t_1]$ & $(t_1,t_2]$ & $\cdots$ & $(t_{k-1},t_k]$ & $(t_k,\infty)$ &                        \\ \hline
+        在$(t_{i-1},t_i]$的失效数 & $d_1$     & $d_2$    & $\cdots$ & $d_k$           & $s$              & $\displaystyle{\sum_{i=1}^k d_i+s=n}$ \\ \hline
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    这种数据称为区间数据．设产品寿命$T$服从指数分布，其概率密度为
+    $$f(t)=\left\{\begin{array}{ll}
+        \lambda e^{-\lambda t}, & t>0,\\
+        0, & \mbox{其他},
+    \end{array}\right.\quad \lambda>0\mbox{未知}$$
+    \begin{enumerate}
+        \item 试基于上述数据写出入的对数似然方程．（提示：考虑事件“$n$只产品分别在区间
+        $(0,t_1],(t_1,t_2],\cdots,(t_{k-1},t_k]$失效$d_1,d_2,\cdots,d_k$只，而直至$t_k$还有$s$只未失效”的概率.）
+        \item 设$d_1<n,s<n$，我们可以用数值解法求得$\lambda$的最大似然估计值，在计算机上计算是
+        容易的． 特别，取检测时间是等间隔的，即取$t_i=it_1,i=1,2,\cdots,k$．验证，此时可得$\lambda$的最大似
+        然估计为
+        $$\hat{\lambda}=\frac{1}{t_1}\ln\left(1+\frac{n-s}{\displaystyle{\sum_{k=2}^k(i-1)d_i+sk}}\right)$$
+    \end{enumerate}  
+
+
+
+
+
+    \item 设某种电子器件的寿命（以小时计）$T$服从指数分布，概率密度为
+    $$f(t)=\left\{\begin{array}{ll}
+        \lambda e^{-\lambda t}, & t>0,\\
+        0, & \mbox{其他},
+    \end{array}\right.$$
+    其中$\lambda>0$未知.从这批器件中任取$n$只在时刻$t=0$时投入独立寿命试验．试验进行到预定
+    时间$T_0$结束．此时，有$k(0<k<n)$只器件失效，试求$\lambda$的最大似然估计．（提示：考虑“试验直
+    至时刻$T_0$为止，有$k$只器件失效，而有$n-k$只未失效”这一事件的概率，从而写出$\lambda$的似然
+    方程．）
+
+
+
+
+
+
+    \item 设系统由两个独立工作的成败型元件串联而成（成败型元件只有两种状态：正常工作
+    或失效）．元件1、元件2的可靠性分别为$p_1,p_2$，它们均未知．随机地取$N$个系统投入试验，
+    当系统中至少有一个元件失效时系统失效，现得到以下的试验数据：$n_1$——仅元件1失效的系
+    统数； $n_2$——仅元件2失效的系统数；$n_{12}$——元件1，元件2至少有一个失效的系统数； $s$——未失效
+    的系统数．$n_1+n_2+n_{12}+s=N$．这里$n_{12}$为隐蔽数据，也就是只知系统失效，但不能知道是由
+    元件1还是元件2单独失效引起的，还是由元件1，2均失效引起的．设隐蔽与系统失效的真
+    正原因独立．
+    \begin{enumerate}
+        \item 试写出$p_1,p_2$的似然函数．
+        \item 设有系统寿命试验数据$N=20,n_1=5,n_2=3,n_{12}=1,s=11$.试求$p_1,p_2$的最大似然
+        估计．（提示：$p_1$应满足方程$(p_1-1)(12p_1^2+11p_1-14)=0$.）
+    \end{enumerate}
+
+
+
+
+
+    \item \begin{enumerate}
+        \item 设总体$X$具有分布律
+        \renewcommand{\arraystretch}{1.3}
+        \begin{table}[H]\centering
+            \begin{tabular}{c|ccc}
+            $X$   & 1        & 2        & 3           \\ \hline
+            $p_k$ & $\theta$ & $\theta$ & $1-2\theta$
+            \end{tabular}
+        \end{table}
+        \renewcommand{\arraystretch}{1.0}
+        $\theta>0$未知，今有样本
+        $$\begin{array}{cccccccccccccccc}
+            1 & 1 & 1 & 3 & 2 & 1 & 3 & 2 & 2 & 1 & 2 & 2 & 3 & 1 & 1 & 2 
+        \end{array}$$
+        试求$\theta$的最大似然估计值和矩估计值．
+        \item 设总体$X$服从$\Gamma$分布．其概率密度为
+        $$f(x)=\left\{\begin{array}{ll}
+            \dfrac{1}{\beta^\alpha\Gamma(\alpha)}x^{\alpha-1}e^{-x/\beta}, & x>0\\
+            0, & \mbox{其他}
+        \end{array}\right.$$
+        其形状参数$\alpha>0$为已知，尺度参数$\beta>0$未知.今有样本值$x_1,x_2,\cdots,x_n$，求$\beta$的最大似然估
+        计值．
+    \end{enumerate}
+
+
+
+
+
+    \item \begin{enumerate}
+        \item 设$Z=\ln X\sim N(\mu,\sigma^2)$，即$X$服从对数正态分布，验证$E(X)=\exp (\mu+\dfrac{1}{2}\sigma^2)$．
+        \item 设自（1）中总体$X$中取一容量为$n$的样本$x_1,x_2,\cdots,x_n$，求$E(X)$的最大似然估计.
+        此处设$\mu,\sigma^2$均为未知.
+        \item 已知在文学家萧伯纳的《An Intelligent Woman's Guide To Socialism》一书中，一个句
+        子的单词数近似地服从对数正态分布，设$\mu,\sigma^2$为未知．今自该书中随机地取20个句子．这
+        些句子中的单词数分别为
+        $$\begin{array}{cccccccccc}
+            52 & 24 & 15 & 67 & 15 & 22 & 63 & 26 & 16 & 32\\
+            7 & 33 & 28 & 14 & 7 & 29 & 10 & 6 & 59 & 30 
+        \end{array}$$
+        问这本书中，一个句子单词数均值的最大似然估计值等于多少？
+    \end{enumerate}
+
+
+
+
+
+
+    \item 考虑进行定数截尾寿命试验，假设将随机抽取的n 件产品在时间$t=0$时同时投入试
+    验试验进行到$m$件$(m<n)$产品失效时停止，$m$件失效产品的失效时间分别为
+    $$0\leq t_1 \leq t_2 \leq \cdots \leq t_m$$
+    $t_m$是第$m$件产品的失效时间．设产品的寿命分布为韦布尔分布，其概率密度为
+    $$f(x)=\left\{\begin{array}{ll}
+        \dfrac{\beta}{\eta ^\beta}x^{\beta-1}e^{{-(\frac{x}{\eta})}^\beta}, & x>0\\
+        0, & \mbox{其他}
+    \end{array}\right.$$
+    其中参数$\beta$已知．求参数$\eta$的最大似然估计．
+
+
+
+
+
+    \item 设某大城市郊区的一条林荫道两旁开设了许多小商店，这些商店的开设延续时间（以
+    月计）是一个随机变量，现随机地取30家商店，将它们的延续时间按自小到大排序，选其中前
+    8家商店．它们的延续时间分别是
+    $$\begin{array}{cccccccc}
+        3.2 & 3.9 & 5.9 & 6.5 & 16.5 & 20.3 & 40.4 & 50.9
+    \end{array}$$
+    假设商店开设延续时间的长度是韦布尔随机变量．其概率密度为
+    $$f(x)=\left\{\begin{array}{ll}
+        \dfrac{\beta}{\eta ^\beta}x^{\beta-1}e^{{-(\frac{x}{\eta})}^\beta}, & x>0\\
+        0, & \mbox{其他}
+    \end{array}\right.$$
+    其中，$\beta=0.8$.
+    \begin{enumerate}
+        \item 试用上题结果，写出$\eta$的最大似然估计．
+        \item 按（1）的结果求商店开设延续时间至少为2年的概率的估计．
+    \end{enumerate}
+
+
+
+
+
+
+    \item 设分别自总体$N(\mu_1,\sigma^2)$和$N(\mu_2,\sigma^2)$中抽取容量$n_1,n_2$的两独立样本，其样本方差分
+    别为$S_1^2,S_2^2$．试证．对于任意常数$a,b(a+b=1),Z=aS_1^2+bS_2^2$都是$\sigma^2$的无偏估计，并确定常
+    数$a,b$，从使$D(Z)$达到最小．
+
+
+
+
+
+    \item 设总体$X\sim N(\mu,\sigma^2)$，$X_1,X_2,\cdots,X_n$是来自$X$的样本．已知样本方差$S^2=\dfrac{1}{n-1}\displaystyle{\sum ^n_{i=1} (X_i-\overline{X})^2}$是$\sigma^2$的无
+    偏估计．验证样本标准差$S$不是标准差$\sigma$的无偏估计．（提示：
+    记$Y=\dfrac{(n-1)S^2}{\sigma^2}$，则$Y\sim \chi^2(n-1)$，而$S=\dfrac{\sigma}{\sqrt{n-1}}\sqrt{Y}$是$Y$的函数，利用$\chi^2(n-1)$的概率密度
+    可得$E(S)=\dfrac{1}{(\sqrt{2})^n}\sqrt{\dfrac{2}{n-1}}\dfrac{\Gamma(n/2)\sigma}{\Gamma((n-1)/2)}\neq \sigma$.）
     
 
+
+
+
+
+    \item 设总体$X$服从指数分布，其概率密度为
+    $$f(x)=\left\{\begin{array}{ll}
+        \dfrac{1}{\theta}x^{-x/\theta}, &  x>0\\
+        0, & \mbox{其他}
+    \end{array}\right.$$
+    $\theta>0$未知．从总体中抽取一容量为$n$的样本$X_1,X_2,\cdots,X_n$.
+    \begin{enumerate}
+        \item 证明$\dfrac{2n\overline{X}}{\theta}\sim \chi^2(2n)$.
+        \item 求$\theta$的置信水平为$1-\alpha$的单侧置信下限．
+        \item 某种元件的寿命（以h计）服从上述指数分布，现从中抽得一容量$n=16$的样本，测
+        得样本均值为5010$\, $h, 试求元件的平均寿命的置信水平为0.90的单侧置信下限．
+    \end{enumerate}
+
+
+
+
+    \item 设总体$X\sim U(0,\theta)$,$X_1,X_2,\cdots,X_n$是来自$X$的样本．
+    \begin{enumerate}
+        \item 验证$Y=\max\{X_1,X_2,\cdots,X_n\}$的分布函数为
+        $$F_Y(y)=\left\{\begin{array}{ll}
+            0, & y>0\\
+            y^n/\theta^n, & 0\leq y <\theta\\
+            1, &  y\geq \theta
+        \end{array}\right.$$
+        \item 验证$U=Y/\theta$的概率密度为
+        $$f_U(u)=\left\{\begin{array}{ll}
+            n\mu^{n-1}, & 0\leq \mu \leq 1\\
+            0, & \mbox{其他}
+        \end{array}\right.$$
+        \item 给定正数$\alpha,0<\alpha<1$，求$U$的分布的上$\alpha/2$分位点$h_{\alpha/2}$以及上$1-\alpha/2$分位点$h_{1-\alpha/2}$.
+        \item 利用（2）,（3） 求参数$\theta$的置信水平为$1-\alpha$的置信区间．
+        \item 设某人上班的等车时间$X\sim U(0,\theta)$，$\theta$未知．现在有样本$x_1=4.2,x_2=3.5,x_3=1.7,x_4=1.2,x_5=2.4$，
+        求$\theta$的置信水平为0.95的置信区间．
+    \end{enumerate}
 
     
 
