@@ -261,7 +261,7 @@
         \end{array}\right.$$
         \item 验证$U=Y/\theta$的概率密度为
         $$f_U(u)=\left\{\begin{array}{ll}
-            n\mu^{n-1}, & 0\leq \mu \leq 1\\
+            nu^{n-1}, & 0\leq u \leq 1\\
             0, & \mbox{其他}
         \end{array}\right.$$
         \item 给定正数$\alpha,0<\alpha<1$，求$U$的分布的上$\alpha/2$分位点$h_{\alpha/2}$以及上$1-\alpha/2$分位点$h_{1-\alpha/2}$.
@@ -270,8 +270,165 @@
         求$\theta$的置信水平为0.95的置信区间．
     \end{enumerate}
 
-    
 
+
+
+
+    \item 设总体$X$服从指数分布，概率密度为
+    $$f(x)=\left\{\begin{array}{ll}
+        \dfrac{1}{\theta}e^{-x/\theta}, & x>0\\
+        0, & \mbox{其他}
+    \end{array}\right.\quad \theta>0$$
+    设$X_1,X_2,\cdots,X_n$是来自$X$的一个样本．试取第14题中当$\theta=\theta_0$时的统计量$\chi^2=\dfrac{2n\overline{X}}{\theta_0}$作为检
+    验统计量，检验假设$H_0:\theta=\theta_0,H_1:\theta\neq \theta_0$.取显著性水平为$\alpha$（注意：$E(\overline{X})=\theta$）
+
+    设某种电子元件的寿命（以小时计）服从均值为$\theta$的指数分布，随机取12只元件测得它
+    们的寿命分别为
+    $$\begin{array}{cccccccccccc}
+        340 & 430 & 560 & 920 & 1380 & 1520 & 1660 & 1770 & 2100 & 2320 & 2350 & 2650
+    \end{array}$$
+    试取显著性水平$\alpha=0.05$，检验假设$H_0:\theta=1450,H_1:\theta\neq 1450$.
+
+
+
+
+
+    \item 经过十一年的试验，达尔文于1876年得到15对玉米样品的数据如下表，每对作物除
+    授粉方式不同外，其他条件都是相同的．试用逐对比较法检验不同授粉方式对玉米高度是否
+    有显著的影响$(\alpha=0.05)$．问应增设什么条件才能用逐对比较法进行检验？
+    \renewcommand{\arraystretch}{2.5}
+    \begin{table}[H]\centering
+        \begin{tabular}{c|c|c|c|c|c|c|c|c}
+        \hline
+        授粉方式             & 1                & 2                & 3                & 4  & 5                & 6                & 7                & 8                \\ \hline
+        异株授粉的作物高度（$x_i$） & $23\dfrac{1}{8}$ & 12               & $20\dfrac{3}{8}$ & 22 & $19\dfrac{1}{8}$ & $21\dfrac{4}{8}$ & $22\dfrac{1}{8}$ & $20\dfrac{3}{8}$ \\ \hline
+        同株授粉的作物高度（$y_i$） & $27\dfrac{3}{8}$ & 21               & 20               & 20 & $19\dfrac{3}{8}$ & $18\dfrac{5}{8}$ & $18\dfrac{5}{8}$ & $15\dfrac{2}{8}$ \\ \hline
+        授粉方式             & 9                & 10               & 11               & 12 & 13               & 14               & 15               &                  \\ \hline
+        异株授粉的作物高度（$x_i$） & $18\dfrac{2}{8}$ & $21\dfrac{5}{8}$ & $23\dfrac{2}{8}$ & 21 & $22\dfrac{1}{8}$ & 23               & 12               &                  \\ \hline
+        同株授粉的作物高度（$y_i$） & $16\dfrac{4}{8}$ & 18               & $16\dfrac{2}{8}$ & 18 & $12\dfrac{6}{8}$ & $15\dfrac{4}{8}$ & 18               &                  \\ \hline
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+
+
+
+
+
+    \item 一内科医生声称，如果病人每天傍晚聆听一种特殊的轻音乐会降低血压（舒张压，
+    以mmHg计）．今选取了10个病人在试验之前和试验之后分别测量了血压，得到以下的
+    数据：
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+        \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c}
+        \hline
+        病人          & 1  & 2  & 3  & 4  & 5  & 6  & 7  & 8  & 9  & 10 \\ \hline
+        试验之前（$x_i$） & 86 & 92 & 95 & 84 & 80 & 78 & 98 & 95 & 94 & 96 \\ \hline
+        试验之后（$y_i$） & 84 & 83 & 81 & 78 & 82 & 74 & 86 & 85 & 80 & 82 \\ \hline
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    设$D_i=X_i-Y_i(i=1,2,\cdots,10)$为来自正态总体$N(\mu_D,\sigma_D^2)$的样本，$\mu_D,\sigma^2_D$均未知．试检验是否
+    可以认为医生的意见是对的（取$\alpha=0.05$）.
+
+
+
+
+    \item 以下是各种颜色的汽车的销售情况：
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+        \begin{tabular}{c|c|c|c|c|c}
+        \hline
+        颜色  & 红  & 黄  & 蓝  & 绿  & 棕  \\ \hline
+        车辆数 & 40 & 64 & 46 & 36 & 14 \\ \hline
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    试检验顾客对这些颜色是否有偏爱，即检验销售情况是否是均匀的（取$\alpha=0.05$）.
+
+
+
+
+
+
+    \item 某种闪光灯，每盏灯含4个电池，随机地取150盏灯，经检测得到以下的数据：
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+        \begin{tabular}{c|c|c|c|c|c}
+        \hline
+        一盏灯损坏的电池数$x$ & 0  & 1  & 2  & 3  & 4  \\ \hline
+        灯的盏数         & 26 & 51 & 47 & 16 & 10 \\ \hline
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    试取$\alpha=0.05$检验一盏灯损坏的电池数$X\sim b(4,\theta)$（$\theta$未知）．
+
+
+
+
+
+    \item 临界闪烁频率(cff)是人眼对于闪烁光源能够分辨出它在闪烁的最高频率（以Hz
+    计）．超过cff的频率，即使光源实际是在闪烁的，而人看起来是连续的（不闪烁的）．一项研究
+    旨在判定cff的均值是否与人眼的虹膜颜色有关．所得数据如下：
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+        \begin{tabular}{ccccccc}
+        \hline
+        虹膜颜色                 & \multicolumn{2}{c}{棕色}                              & \multicolumn{2}{c}{绿色}                          & \multicolumn{2}{c}{蓝色}                         \\ \hline
+                             & 26.8                     & 26.3                     & 26.4                     & 29.1                 & 25.7                     & 29.4                 \\
+                             & 27.9                     & 24.8                     & 24.2                     &                      & 27.2                     & 28.3                 \\
+        \multicolumn{1}{l}{} & \multicolumn{1}{l}{23.7} & \multicolumn{1}{l}{25.7} & \multicolumn{1}{l}{28.0} & \multicolumn{1}{l}{} & \multicolumn{1}{l}{29.9} & \multicolumn{1}{l}{} \\
+                             & 25.0                     & 24.5                     & 26.9                     &                      & 28.5                     &                      \\ \hline
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    试在显著性水平0.05下，检验各种虹膜颜色相应的cff的均值有无显著的差异．设各个总体
+    服从正态分布，且方差相等，不同颜色下的样本之间相互独立．
+
+
+
+
+    \item 面列出了挪威人自$1938 \sim 1947$年间年人均脂肪消耗量与患动脉粥样硬化症而死
+    亡的死亡率之间相关的一组数据．
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+        \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c}
+        \hline
+        年份                   & 1938 & 1939 & 1940 & 1941 & 1942 & 1943 & 1944 & 1945 & 1946 & 1947 \\ \hline
+        脂肪消耗量$x$（千克/人年）      & 14.4 & 16.0 & 11.6 & 11.0 & 10.0 & 9.6  & 9.2  & 10.4 & 11.4 & 12.5 \\ \hline
+        死亡率$y$（1/（$10^5$人年）） & 29.1 & 29.7 & 29.2 & 26.0 & 24.0 & 23.1 & 23.0 & 23.1 & 25.2 & 26.1 \\ \hline
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    设对于给定的$x,Y$为正态变量，且方差与$x$无关．
+    \begin{enumerate}
+        \item 求回归直线方程$y=a+bx$.
+        \item 在显著性水平$\alpha=0.05$下检验假设$H_0:b=0,H_1:b\neq 0$.
+        \item 求$\hat{y}|_{x=13}$.
+        \item 求$x=13$处$\mu(x)$置信水平为0.95的置信区间．
+        \item 求$x=13$处$Y$的新观察值$Y_0$的置信水平为0.95的预测区间．
+    \end{enumerate}
+
+
+
+
+    \item 下面给出$1924 \sim 1992$年奥林匹克运动会女子100米仰泳的最佳成绩（以s计），（其
+    中1940年及1944年未举行奥运会）
+    \renewcommand{\arraystretch}{1.3}
+    \begin{table}[H]\centering
+        \begin{tabular}{c|cccccccc}
+        \hline
+        年份 & 1924 & 1928 & 1932 & 1936 & 1948 & 1952 & 1956 & 1960 \\ \hline
+        成绩 & 83.2 & 82.2 & 79.4 & 78.9 & 74.4 & 74.3 & 72.9 & 69.3 \\ \hline
+        年份 & 1964 & 1968 & 1972 & 1976 & 1980 & 1984 & 1988 & 1992 \\ \hline
+        成绩 & 67.7 & 66.2 & 65.8 & 61.8 & 60.9 & 62.6 & 60.9 & 60.7 \\ \hline
+        \end{tabular}
+    \end{table}
+    \renewcommand{\arraystretch}{1.0}
+    \begin{enumerate}
+        \item 画出散点图．
+        \item 求成绩关于年份的线性回归方程．
+        \item 检验回归效果是否显著（取$\alpha=0.05$）.
+    \end{enumerate}
 
 
 
