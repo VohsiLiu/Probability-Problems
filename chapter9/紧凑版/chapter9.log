@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.10)  8 NOV 2021 22:43
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.10)  8 NOV 2021 22:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**数理统计拓展习题
-(./数理统计拓展习题.tex
+**chapter9
+(./chapter9.tex
 LaTeX2e <2021-06-01> patch level 1
 L3 programming layer <2021-07-12> (d:/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
@@ -440,8 +440,8 @@ Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
 \bigstrutjot=\dimen270
 )
 \symEulerExtension=\mathgroup6
- (./数理统计拓展习题.aux)
-\openout1 = `数理统计拓展习题.aux'.
+ (./chapter9.aux)
+\openout1 = `chapter9.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
@@ -550,83 +550,50 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
+
+Package fontspec Info: Could not resolve font "KaiTi/BI" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: Could not resolve font "KaiTi/B" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: Could not resolve font "KaiTi/I" (it probably doesn't
+(fontspec)             exist).
+
+
+Package fontspec Info: Font family 'KaiTi(0)' created for font 'KaiTi' with
+(fontspec)             options [Script={CJK}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"KaiTi/OT:script=hani;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+
+LaTeX Font Info:    Trying to load font information for U+msa on input line 39.
 (d:/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 39.
  (d:/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+euex on input line 35.
+LaTeX Font Info:    Trying to load font information for U+euex on input line 39.
  (d:/texlive/texmf-dist/tex/latex/amsfonts/ueuex.fd
 File: ueuex.fd 2013/01/14 v3.01 Euler extra symbols
 ) [1
 
-] [2
-
-] [3
-
-] [4
-
-] [5
-
-] [6
-
-] [7
-
-] [8
-
-] [9
-
-] [10
-
-] [11
-
-] [12
-
-]
-Overfull \hbox (23.76309pt too wide) in paragraph at lines 228--232
-[]\TU/SimSun(0)/m/n/10 设 总 体 $\OML/cmm/m/it/10 X \OMS/cmsy/m/n/10 ^^X \OML/cmm/m/it/10 N\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^V; ^^[[]\OT1/cmr/m/n/10 )$\TU/SimSun(0)/m/n/10 ，| $\OML/cmm/m/it/10 X[]; X[]; []  ; X[]$ \TU/SimSun(0)/m/n/10 是 来 自 $\OML/cmm/m/it/10 X$ \TU/SimSun(0)/m/n/10 的 样 本．|  已 知 样 本 方 差 $\OML/cmm/m/it/10 S[] \OT1/cmr/m/n/10 = [][]$
- []
-
-[13
-
-] [14
-
-] [15
-
-] [16
-
-] [17
-
-] [18
-
-] [19
-
-] [20
-
-] [21
-
-] [22
-
-]
-Overfull \hbox (37.26363pt too wide) in paragraph at lines 408--414
- [][] 
- []
-
-[23
-
-] [24
-
-] (./数理统计拓展习题.aux) ) 
+] [2] [3] [4] (./chapter9.aux) ) 
 Here is how much of TeX's memory you used:
- 10075 strings out of 476476
- 237975 string characters out of 5820060
- 592658 words of memory out of 5000000
- 30345 multiletter control sequences out of 15000+600000
- 407425 words of font info for 55 fonts, out of 8000000 for 9000
+ 9986 strings out of 476476
+ 232008 string characters out of 5820060
+ 616470 words of memory out of 5000000
+ 30251 multiletter control sequences out of 15000+600000
+ 407449 words of font info for 58 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 90i,13n,97p,364b,617s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 90i,20n,97p,364b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 数理统计拓展习题.pdf (24 pages).
+Output written on chapter9.pdf (4 pages).

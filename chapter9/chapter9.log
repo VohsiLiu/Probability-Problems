@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.10)  4 NOV 2021 21:08
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.10)  8 NOV 2021 22:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -586,14 +586,44 @@ LaTeX Font Info:    Trying to load font information for U+euex on input line 39.
 File: ueuex.fd 2013/01/14 v3.01 Euler extra symbols
 ) [1
 
-] [2] [3] [4] (./chapter9.aux) ) 
+] [2
+
+] [3
+
+] [4
+
+] [5
+
+] [6
+
+] [7
+
+] [8
+
+] [9
+
+] [10
+
+] [11
+
+] [12
+
+] [13
+
+] [14
+
+] [15
+
+] [16
+
+] (./chapter9.aux) ) 
 Here is how much of TeX's memory you used:
  9986 strings out of 476476
  232008 string characters out of 5820060
- 616470 words of memory out of 5000000
+ 585470 words of memory out of 5000000
  30251 multiletter control sequences out of 15000+600000
  407449 words of font info for 58 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 90i,20n,97p,364b,537s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 90i,20n,97p,364b,539s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on chapter9.pdf (4 pages).
+Output written on chapter9.pdf (16 pages).

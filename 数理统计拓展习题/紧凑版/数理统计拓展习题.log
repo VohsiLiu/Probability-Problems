@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.10)  8 NOV 2021 22:43
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2021.8.10)  8 NOV 2021 22:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -563,70 +563,24 @@ LaTeX Font Info:    Trying to load font information for U+euex on input line 35.
 File: ueuex.fd 2013/01/14 v3.01 Euler extra symbols
 ) [1
 
-] [2
-
-] [3
-
-] [4
-
-] [5
-
-] [6
-
-] [7
-
-] [8
-
-] [9
-
-] [10
-
-] [11
-
-] [12
-
-]
+] [2]
 Overfull \hbox (23.76309pt too wide) in paragraph at lines 228--232
 []\TU/SimSun(0)/m/n/10 设 总 体 $\OML/cmm/m/it/10 X \OMS/cmsy/m/n/10 ^^X \OML/cmm/m/it/10 N\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^V; ^^[[]\OT1/cmr/m/n/10 )$\TU/SimSun(0)/m/n/10 ，| $\OML/cmm/m/it/10 X[]; X[]; []  ; X[]$ \TU/SimSun(0)/m/n/10 是 来 自 $\OML/cmm/m/it/10 X$ \TU/SimSun(0)/m/n/10 的 样 本．|  已 知 样 本 方 差 $\OML/cmm/m/it/10 S[] \OT1/cmr/m/n/10 = [][]$
  []
 
-[13
-
-] [14
-
-] [15
-
-] [16
-
-] [17
-
-] [18
-
-] [19
-
-] [20
-
-] [21
-
-] [22
-
-]
+[3] [4] [5]
 Overfull \hbox (37.26363pt too wide) in paragraph at lines 408--414
  [][] 
  []
 
-[23
-
-] [24
-
-] (./数理统计拓展习题.aux) ) 
+[6] (./数理统计拓展习题.aux) ) 
 Here is how much of TeX's memory you used:
  10075 strings out of 476476
  237975 string characters out of 5820060
- 592658 words of memory out of 5000000
+ 614902 words of memory out of 5000000
  30345 multiletter control sequences out of 15000+600000
  407425 words of font info for 55 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  90i,13n,97p,364b,617s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 数理统计拓展习题.pdf (24 pages).
+Output written on 数理统计拓展习题.pdf (6 pages).
